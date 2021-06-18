@@ -65,6 +65,9 @@
   filter: drop-shadow(6px 6px 4px rgb(255, 255, 255, 0.3));
 } */
 
+ .main-nav {
+   transition: top 0.8s;
+ }
 a {
   text-decoration: underline;
 }

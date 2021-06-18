@@ -3,6 +3,8 @@ import Navbar from 'components/Navbar';
 import IndexCTA from 'components/IndexCTA';
 import Footer from 'components/Footer';
 import Link from 'components/Link';
+import Image from 'next/image'
+
 
 
 
@@ -12,7 +14,7 @@ export default function Home() {
     <div className="">
       <div className="bg-landing bg-center bg-cover bg-no-repeat">
         <Head>
-          <title>Fomocraft</title>
+          <title>Station</title>
         </Head>
         {/* This example requires Tailwind CSS v2.0+ */}
         <div className="py-20  bg-center bg-cover bg-no-repeat ">
@@ -23,32 +25,16 @@ export default function Home() {
               <main className="mt-16 mx-auto max-w-4xl px-4 sm:mt-54">
                 <div className="text-center">
 
-           
-              <h1 className="sharetech text-8xl font-black text-white">
-              STATION
-              </h1>
+                <div className="w-96 mx-auto mb-24">
+                  <img src="/logo03.png"  />
+                </div>
+
                       <h2 className="text-4xl inconsolata font-bold mt-10 mb-20 text-white">
                       The world's first cross-chain defi derivatives aggregator. 
 
               </h2>
  
-                      <div className=" max-w-sm mx-auto flex flex-row justify-evenly ">
-
-
-                        <Link href="/services ">
-                          {/* bg-blue-900 bg-opacity-30 */}
-                          <a className="backdrop-opacity-10 hover:bg-blue-900 hover:bg-opacity-30  index-button1-border mb-4 mx-auto inline-flex items-center sm:px-12 px-10 py-2 text-base rounded-full text-white inconsolata">
-                            Services
-                  </a>
-                        </Link>
-
-                        <Link href="/portfolio ">
-                          <a
-                            className="inline-flex mb-4 mx-auto button_gradient_bg items-center sm:px-12 px-10 py-2 text-base  rounded-full text-white inconsolata">
-                            Portfolio
-                  </a>
-                        </Link>
-                      </div>
+             
             </div>
           </main>
         </div>
@@ -112,7 +98,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <IndexCTA></IndexCTA>
+          
      </div>
   );
 }
