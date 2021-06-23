@@ -13,16 +13,16 @@ const navigation = [
 export default function Example() {
   useEffect(()=> {
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("main-nav").style.top = "0";
-  } else {
-    document.getElementById("main-nav").style.top = "-100px";
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("main-nav").style.top = "0";
+    } else {
+      document.getElementById("main-nav").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
-}
   })
   return (
     <header id="main-nav" className="fixed top-0 left-0 w-full z-10">
@@ -72,6 +72,9 @@ window.onscroll = function() {
       </nav>
  
       <style jsx>{`
+      #main-nav {
+  transition: top .6s;
+ }
         *{
           color: #00fa94;
         }  

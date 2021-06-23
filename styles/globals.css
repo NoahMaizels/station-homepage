@@ -13,9 +13,7 @@ body {
 
  }
 
- .main-nav {
-  transition: top 2.6s;
- }
+
  .twitter-tweet.twitter-tweet-rendered{
   margin:0 auto !important;
   display:block;
