@@ -15,16 +15,8 @@ module.exports = {
                 'secondary': '#350B82',
             },
             backgroundImage: theme => ({
-                'gradient': "url('public/services_background.jpg')",
-                'transparent': "url('public/background_transparent.png')",
-                'investments': "url('public/investments-background.png')",
-                'landing': "url('public/landingbackground.jpg')",
-                'about1': "url('public/about_1.jpg')",
-                'about2': "url('public/about_2.jpg')",
-                'about3': "url('public/about_3.jpg')",
-                'about4': "url('public/about_4.jpg')",
-
-                'heretohelp': "url('public/heretohelp.jpg')",
+                // 'gradient': "url('public/services_background.jpg')",
+         
             }),
             gridTemplateColumns: {    
                 'sm-330': 'repeat(1, minmax(0, 330px))',
