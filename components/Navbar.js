@@ -24,7 +24,6 @@ export default function Navbar() {
       setHoverState(newState)
     }
   }
-
   function handleMouseLeave(e) {
     const newState = Object.assign({}, hoverState)
     const closest = e.target.closest('.navIcon')
@@ -33,12 +32,13 @@ export default function Navbar() {
       setHoverState(newState)
     }
   }
+  
   useEffect(() => {
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
     // let prevScrollpos = window.pageYOffset
     window.onscroll = function () {
       // let currentScrollPos = window.pageYOffset
-      if (window.pageYOffset < 100) {
+      if (window.pageYOffset < 150) {
         document.getElementById('main-nav').style.top = '0'
       } else {
         document.getElementById('main-nav').style.top = '-150px'

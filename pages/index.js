@@ -42,7 +42,7 @@ export default function Index() {
           <div className="w-56 pt-60 mx-auto">
             <Image src={logoOnly} />
           </div>
-          <h1 className="mt-24 text-center text-6xl font-gilroy font-bold text-gray-200">
+          <h1 className="tracking-tight mt-24 text-center text-6xl font-gilroy font-bold text-gray-200">
             Where Derivatives Live
           </h1>
           <h2 className="mt-4 text-center max-w-xl text-lg mx-auto font-open-sans text-gray-200">
