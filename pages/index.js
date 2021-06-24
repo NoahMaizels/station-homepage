@@ -19,11 +19,11 @@ export default function Index() {
         showDots: false,
         color: '#0af584',
         backgroundColor: '#474782',
-        points: 10,
+        points: 20,
         maxDistance: 25,
         spacing: 20,
-        scale: 1.0,
-        scaleMobile: 1.0
+        scale: 1,
+        scaleMobile: 1.0,
       })
     }
   }, [])
@@ -67,17 +67,16 @@ export default function Index() {
       <style jsx>{`
       
         #bg-element {
-          width: 100%
-        
-         
+          width: 100%;
+      
         }
-      .main {
-          flex: 1
-          height: 100vh
-          justify-content: center
-          align-items: center
-          background: rgb(60,78,121)
-          background: linear-gradient(21deg, rgba(60,78,121,1) 0%, rgba(33,52,108,1) 14%, rgba(5,26,94,1) 43%)
+        .main {
+          flex: 1;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          background: rgb(60,78,121);
+          background: linear-gradient(21deg, rgba(60,78,121,1) 0%, rgba(33,52,108,1) 14%, rgba(5,26,94,1) 43%);
         }
         p {
           color: blue
