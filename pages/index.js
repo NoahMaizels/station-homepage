@@ -51,7 +51,7 @@ export default function Index() {
           </h2>
           <button
             type="button"
-            className="transition-colors hover:bg-gray-200 mt-8 px-10 mb-32 block text-lg font-gilroy-bold mx-auto items-center  py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            className="transition-colors font-bold hover:bg-gray-200 mt-8 px-10 mb-32 block text-lg font-gilroy mx-auto items-center  py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Discover Station
           </button>
           <div className="h-px"></div>
