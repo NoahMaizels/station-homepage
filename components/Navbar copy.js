@@ -165,9 +165,6 @@ export default function Navbar() {
             </a>
             <div className="App"></div>
           </div>
-       
-       
-       
         </div>
         <div className="py-4 font-gilroy flex flex-wrap justify-center space-x-6 lg:hidden">
           {navigation.map((link) => (

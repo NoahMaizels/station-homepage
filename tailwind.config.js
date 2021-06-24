@@ -10,13 +10,12 @@ module.exports = {
         'open-sans': ['Open Sans', 'Arial', 'ui-sans-serif', 'system-ui']
       },
       transitionProperty: {
-        'top': 'top',
- 
-       },
+        top: 'top'
+      },
       textColor: (theme) => ({
         ...theme('colors'),
         primary: '#0af584',
-        secondary: '#474782',
+        secondary: '#474782'
       }),
       backgroundImage: (theme) => ({
         // 'gradient': "url('public/services_background.jpg')",
@@ -25,7 +24,7 @@ module.exports = {
         ...theme('colors'),
         primary: '#0af584',
         secondary: '#474782',
-        dark: "#333266"
+        dark: '#333266'
       }),
       gridTemplateColumns: {
         'sm-330': 'repeat(1, minmax(0, 330px))',

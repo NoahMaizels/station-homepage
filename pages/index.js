@@ -23,7 +23,7 @@ export default function Index() {
         maxDistance: 25,
         spacing: 20,
         scale: 1,
-        scaleMobile: 1.0,
+        scaleMobile: 1.0
       })
     }
   }, [])
@@ -65,21 +65,24 @@ export default function Index() {
       </main>
 
       <style jsx>{`
-      
         #bg-element {
           width: 100%;
-      
         }
         .main {
           flex: 1;
           height: 100vh;
           justify-content: center;
           align-items: center;
-          background: rgb(60,78,121);
-          background: linear-gradient(21deg, rgba(60,78,121,1) 0%, rgba(33,52,108,1) 14%, rgba(5,26,94,1) 43%);
+          background: rgb(60, 78, 121);
+          background: linear-gradient(
+            21deg,
+            rgba(60, 78, 121, 1) 0%,
+            rgba(33, 52, 108, 1) 14%,
+            rgba(5, 26, 94, 1) 43%
+          );
         }
         p {
-          color: blue
+          color: blue;
         }
       `}</style>
     </div>
