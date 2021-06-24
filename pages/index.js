@@ -12,8 +12,12 @@ export default function Index() {
         mouseControls: false,
         touchControls: false,
         gyroControls: false,
+        showDots: false,
         color: '#0af584',
-        backgroundColor: '#474782',
+        backgroundColor: '#474782', 
+        points: 10,
+        maxDistance: 23,
+        spacing: 20,
         scale: 1.00,
         scaleMobile: 1.00
         })}
@@ -29,83 +33,44 @@ export default function Index() {
       
         <Navbar></Navbar>
         <div id="bg-element">
-         
-         </div>
-        <div className="w-96 mx-auto"> 
-          <Image 
-            src={logoOnly}
-            width={322}
-            height={281}
-          />
-        </div>
+          <div className="px-5">
+          <div className="w-48 pt-60 mx-auto"> 
+            <Image 
+              src={logoOnly}
+            />
+          </div>
+          <h1 className="mt-24 text-center text-6xl font-gilroy-bold text-white">Where Derivatives Live</h1>
+          <h2 className="mt-4 text-center max-w-xl text-lg mx-auto font-open-sans text-white">Get simple, secure, efficient, and decentralized access to aggregated derivatives from multiple defi platforms on multiple blockchains.</h2>
+          <button
+            type="button"
+            className="mt-8 mb-32 block text-lg font-gilroy-bold mx-auto items-center px-2.5 py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Discover Station
+          </button>
+          <div
+  
+            className="h-px"
+          >
+           </div>
+          </div>
+      </div>
+
+       
 
     
         
         <main className="">
-          {/* <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div>
-          <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> <div className="w-96 mx-auto"> 
-            <Image 
-              src={logoOnly}
-              width={322}
-              height={281}
-            />
-          </div> */}
+         <h1>Test</h1>
         </main>
 
         
          
       <style jsx>{`
+      
         #bg-element {
           width: 100%;
-          height: 800px;
+        
+         
         }
       .main {
           flex: 1;

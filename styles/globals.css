@@ -9,9 +9,24 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: monospace, sans-serif;
+  font-family: 'gilroy', 'Open Sans', sans-serif;
 
  }
+
+ 
+@font-face {
+  font-family: "gilroy-bold";
+  src: url("public/fonts/Gilroy-ExtraBold.otf");
+  font-weight: 400;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "gilroy";
+  src: url("public/fonts/Gilroy-Light.otf");
+  font-weight: 700;
+  font-style: normal;
+}
 
 
  .twitter-tweet.twitter-tweet-rendered{

@@ -5,18 +5,23 @@ module.exports = {
         extend: {
             fontWeight: ['hover', 'focus'],
             fontFamily: {
-                'sophia': ['sophia_pro', 'Arial', 'ui-sans-serif', 'system-ui',],
-                'Roboto': ['Roboto', 'Arial', 'ui-sans-serif', 'system-ui',],
-          
+                'gilroy': ['gilroy', 'Arial', 'ui-sans-serif', 'system-ui',],
+                'gilroy-bold': ['gilroy-bold', 'Arial', 'ui-sans-serif', 'system-ui',],
+                'open-sans': ['Open Sans', 'Arial', 'ui-sans-serif', 'system-ui',], 
                },
             textColor: theme => theme('colors'),
             textColor: {
-                'primary': '#FD00C4',
-                'secondary': '#350B82',
+                'primary': '#0af584',
+                'secondary': '#474782',
             },
             backgroundImage: theme => ({
                 // 'gradient': "url('public/services_background.jpg')",
          
+            }),
+            backgroundColor: theme => ({
+                ...theme('colors'),
+                'primary': '#0af584',
+                'secondary': '#474782',
             }),
             gridTemplateColumns: {    
                 'sm-330': 'repeat(1, minmax(0, 330px))',
