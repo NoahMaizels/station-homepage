@@ -25,7 +25,7 @@ export default function Index() {
         })}
  },[])
   return (
-    <>
+    <div className="bg-secondary">
         <Head>
           <title>Station</title>
           <script src="/scripts/three.min.js"></script>
@@ -86,6 +86,6 @@ export default function Index() {
           color: blue;
         }
       `}</style>
-    </>
+    </div>
   );
 }
