@@ -30,7 +30,7 @@ export default function Thorchain() {
                 <div className="flow-root rounded-lg pb-8">
                   <div className="-mt-6">
                     <div>
-                      <div className="bg-white items-center justify-center p-3 rounded-md shadow-lg">
+                      <div className="bg-white items-center justify-center p-3 rounded-md">
                         <div className="px-14 lg:px-24">
                           <Image src={item.image} />
                         </div>
