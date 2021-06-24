@@ -20,7 +20,7 @@ export default function Index() {
         color: '#0af584',
         backgroundColor: '#474782',
         points: 10,
-        maxDistance: 23,
+        maxDistance: 32,
         spacing: 20,
         scale: 1.0,
         scaleMobile: 1.0
