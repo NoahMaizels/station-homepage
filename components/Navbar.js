@@ -32,13 +32,13 @@ export default function Navbar() {
       setHoverState(newState)
     }
   }
-  
+
   useEffect(() => {
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
     // let prevScrollpos = window.pageYOffset
     window.onscroll = function () {
       // let currentScrollPos = window.pageYOffset
-      if (window.pageYOffset < 150) {
+      if (window.pageYOffset < 135) {
         document.getElementById('main-nav').style.top = '0'
       } else {
         document.getElementById('main-nav').style.top = '-150px'

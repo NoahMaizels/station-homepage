@@ -29,6 +29,7 @@ export default function Index() {
   }, [])
   return (
     <div className="bg-secondary">
+      <div className="z-50 absolute -top-96 h-96 w-full bg-secondary"></div>
       <Head>
         <title>Station</title>
         <script src="/scripts/three.min.js"></script>
