@@ -15,17 +15,24 @@ body {
 
  
 @font-face {
-  font-family: "gilroy-bold";
-  src: url("public/fonts/Gilroy-ExtraBold.otf");
-  font-weight: 400;
-  font-style: bold;
+  font-family: "gilroy";
+  src: url("public/gilroy/Gilroy-ExtraBold.otf");
+  font-weight: 800;
+  font-style: 'Extra Bold';
 }
 
 @font-face {
   font-family: "gilroy";
-  src: url("public/fonts/Gilroy-Light.otf");
-  font-weight: 700;
-  font-style: normal;
+  src: url("public/gilroy/Gilroy-Regular.otf");
+  font-weight: 500;
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: "gilroy";
+  src: url("public/gilroy/Gilroy-Bold.otf");
+  font-weight: 500;
+  font-style: 'bold';
 }
 
 

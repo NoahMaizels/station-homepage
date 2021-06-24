@@ -6,7 +6,6 @@ module.exports = {
             fontWeight: ['hover', 'focus'],
             fontFamily: {
                 'gilroy': ['gilroy', 'Arial', 'ui-sans-serif', 'system-ui',],
-                'gilroy-bold': ['gilroy-bold', 'Arial', 'ui-sans-serif', 'system-ui',],
                 'open-sans': ['Open Sans', 'Arial', 'ui-sans-serif', 'system-ui',], 
                },
             textColor: theme => theme('colors'),
