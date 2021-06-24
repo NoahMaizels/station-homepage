@@ -1,20 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { useEffect, useState } from 'react'
 
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import {
-  ChartBarIcon,
-  CursorClickIcon,
-  DocumentReportIcon,
-  MenuIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-
+/* This example requires Tailwind CSS v2.0+ */
 const navigation = [
   { name: 'Overview', href: '#' },
   { name: 'How It Works', href: '#' },
@@ -22,54 +8,6 @@ const navigation = [
   { name: 'Team', href: '#' },
   { name: 'Community', href: '#' }
 ]
-
-const solutions = [
-  {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorClickIcon,
-  },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
-  {
-    name: 'Reports',
-    description: 'Get detailed reports that will help you make more informed decisions ',
-    href: '#',
-    icon: DocumentReportIcon,
-  },
-]
-const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-  },
-  { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-  { name: 'Events', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function Navbar() {
   const [hoverState, setHoverState] = useState({
@@ -109,34 +47,26 @@ export default function Navbar() {
     }
   })
   return (
-    <Popover id="main-nav" className="transition-top duration-500 fixed top-0 left-0 w-full z-10">
-      {({ open }) => (
-        <>
-          <div   className="z-50 flex justify-between items-center px-4 py-6 sm:px-6   md:space-x-10">
-            <div className="flex justify-start ">
-              <a href="/">
-                <img className="h-10 w-auto" src="logo07.png" alt="" />
-              </a>
-            </div>
-            <div className="-mr-2 -my-2 lg:hidden">
-              <Popover.Button className="bg-secondary rounded-md p-2 inline-flex items-center justify-center text-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                <span className="sr-only">Open menu</span>
-                <MenuIcon className="h-6 w-6" aria-hidden="true" />
-              </Popover.Button>
-            </div>
-            <Popover.Group as="nav" className="hidden lg:flex space-x-7">
-           
-            {navigation.map((link) => (
+    <header id="main-nav" className="fixed top-0 left-0 w-full z-10">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div className="w-full py-6 flex items-center justify-between border-b border-green-500 lg:border-none">
+          <a href="/">
+            <img className="h-10 w-auto" src="logo07.png" alt="" />
+          </a>
+          <div className="flex items-center">
+            <div className="hidden tracking-wider ml-10 space-x-8 lg:block">
+              {navigation.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-gilroy transition-colors hover:text-gray-200 text-primary  text-lg font-bold hover:text-gray-200">
+                  className="font-gilroy transition-colors hover:text-gray-200 text-base text-lg font-bold hover:text-gray-200">
                   {link.name}
                 </a>
               ))}
- 
-           </Popover.Group>
-            <div className="hidden lg:flex space-x-4 items-center justify-end    ">
+            </div>
+          </div>
+
+          <div className="flex ml-10 space-x-4">
             <a
               className="navIcon"
               onMouseOver={handleMouseOver}
@@ -145,8 +75,8 @@ export default function Navbar() {
               id="twitter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 viewBox="0 0 43.171 43.171">
                 <defs />
                 <path
@@ -168,8 +98,8 @@ export default function Navbar() {
               id="telegram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 viewBox="0 0 43.171 43.171">
                 <defs />
                 <path
@@ -191,8 +121,8 @@ export default function Navbar() {
               id="telegramann">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 viewBox="0 0 43.17 43.171">
                 <defs />
                 <path
@@ -218,8 +148,8 @@ export default function Navbar() {
               id="medium">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 viewBox="0 0 43.171 43.171">
                 <defs />
                 <path
@@ -233,112 +163,38 @@ export default function Navbar() {
                 />
               </svg>{' '}
             </a>
-            </div>
+            <div className="App"></div>
           </div>
-{/* 
-          <Transition
-            show={open}
-            as={Fragment}
-            enter="duration-200 ease-out"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="duration-100 ease-in"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
-          > */}
+       
+       
+       
+        </div>
+        <div className="py-4 font-gilroy flex flex-wrap justify-center space-x-6 lg:hidden">
+          {navigation.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="font-gilroy text-base font-medium text-gray-200 hover:text-indigo-50">
+              {link.name}
+            </a>
+          ))}
+        </div>
+      </nav>
 
-        <Transition 
-          show={open}
-          as={Fragment} 
-          enter="transition ease-in-out duration-300 transform"
-          enterFrom="-translate-y-full"
-          enterTo="translate-y-0"
-          leave="transition ease-in-out duration-300 transform"
-          leaveFrom="translate-y-0"
-          leaveTo="-translate-y-full"
-        >
-            <Popover.Panel
-              focus
-              static
-              className="z-50 absolute top-0 inset-x-0 transition transform origin-top-right lg:hidden"
-            >
-              <div className="w-full shadow-lg ring-1 ring-black ring-opacity-5 bg-dark divide-y-2">
-                <div className="pt-5 pb-6 px-5">
-                  <div className="flex items-center justify-between">
-                    <div>
-                    <a href="/">
-            <img className="h-10 w-auto" src="logo07.png" alt="" />
-          </a>
-                    </div>
-                    <div className="-mr-2">
-                      <Popover.Button className="bg-secondary rounded-md p-2 inline-flex items-center justify-center text-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                        <span className="sr-only">Close menu</span>
-                        <XIcon className="h-6 w-6" aria-hidden="true" />
-                      </Popover.Button>
-                    </div>
-                  </div>
-                  <div className="mt-6">
-                    <nav className="grid grid-cols-1 gap-7">
-                      {solutions.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="-m-3 p-3 flex items-center rounded-lg"
-                        >
-                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500">
-                            <item.icon className="h-6 w-6" aria-hidden="true" />
-                          </div>
-                          <div className="ml-4 text-base font-medium text-primary">{item.name}</div>
-                        </a>
-                      ))}
-                    </nav>
-                  </div>
-                </div>
-               
-                {/* <div className="py-6 px-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    <a href="#" className="text-base font-medium text-primary hover:text-primary">
-                      Pricing
-                    </a>
+      <style jsx>{`
+        #main-nav {
+          transition: top 0.5s;
+          backdrop-filter: blur(1px);
+        }
 
-                    <a href="#" className="text-base font-medium text-primary hover:text-primary">
-                      Docs
-                    </a>
+        a img {
+          color: '#00fa94';
+        }
 
-                    <a href="#" className="text-base font-medium text-primary hover:text-primary">
-                      Enterprise
-                    </a>
-                    {resources.map((item) => (
-                      <a
-                        key={resources.name}
-                        href={item.href}
-                        className="text-base font-medium text-primary hover:text-primary"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                  <div className="mt-6">
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                    >
-                      Sign up
-                    </a>
-                    <p className="mt-6 text-center text-base font-medium text-primary">
-                      Existing customer?{' '}
-                      <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                        Sign in
-                      </a>
-                    </p>
-                  </div>
-                </div> */}
-              </div>
-            </Popover.Panel>
-          </Transition>
-        </>
-      )}
-      
-    </Popover>
+        * {
+          color: #00fa94;
+        }
+      `}</style>
+    </header>
   )
 }
