@@ -14,8 +14,8 @@ export default function Index() {
       VANTA.NET({
         el: '#bg-element',
         mouseControls: false,
-        touchControls: false,
-        gyroControls: false,
+        touchControls: true,
+        gyroControls: true,
         showDots: false,
         color: '#0af584',
         backgroundColor: '#474782',
