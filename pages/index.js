@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Navbar from 'components/Navbar';
- import Image from 'next/image';
+import Thorchain from 'components/Thorchain';
+
+import Image from 'next/image';
 import logoOnly from 'public/logoOnly.png';
 import {useEffect} from 'react'
 
@@ -34,7 +36,7 @@ export default function Index() {
         <Navbar></Navbar>
         <div id="bg-element">
           <div className="px-5">
-          <div className="w-48 pt-60 mx-auto"> 
+          <div className="w-56 pt-60 mx-auto"> 
             <Image 
               src={logoOnly}
             />
@@ -54,7 +56,7 @@ export default function Index() {
            </div>
           </div>
       </div>
-
+      <Thorchain></Thorchain>
        
 
     
