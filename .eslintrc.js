@@ -26,14 +26,16 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'jsx-a11y/anchor-is-valid': [
-      'error',
-      {
-        components: ['Link'],
-        specialLink: ['hrefLeft', 'hrefRight'],
-        aspects: ['invalidHref', 'preferButton']
-      }
-    ],
+    'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/mouse-events-have-key-events': 'off',
+    // 'jsx-a11y/anchor-is-valid': [
+    //   'error',
+    //   {
+    //     components: ['Link'],
+    //     specialLink: ['hrefLeft', 'hrefRight'],
+    //     aspects: ['invalidHref', 'preferButton']
+    //   }
+    // ],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }] // Use our .prettierrc file as source
   }
 }
