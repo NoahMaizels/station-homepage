@@ -45,13 +45,16 @@ export default function Example() {
 
           <div className="flex ml-10 space-x-4">
             <a>
-              <img src="twitter.svg" alt="twitter" height="40" width="40" />
+              <img src="twitter.png" alt="twitter" height="40" width="40" />
             </a>
             <a>
-              <img src="medium.svg" alt="medium" height="40" width="40" />
+              <img src="telegram.png" alt="telegram" height="40" width="40" />
             </a>
             <a>
-              <img src="telegram.svg" alt="telegram" height="40" width="40" />
+              <img src="telegramann.png" alt="telegram ann" height="40" width="40" />
+            </a>
+            <a>
+              <img src="medium.png" alt="medium" height="40" width="40" />
             </a>
           </div>
         </div>
