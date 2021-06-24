@@ -13,7 +13,7 @@ export default function Index() {
     {
       VANTA.NET({
         el: '#bg-element',
-        mouseControls: false,
+        mouseControls: true,
         touchControls: true,
         gyroControls: true,
         showDots: false,
