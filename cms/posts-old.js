@@ -1,12 +1,11 @@
-const fetch = require("node-fetch")
 const GQLRequest = require('graphql-request')
-const endpoint = "https://api-eu-central-1.graphcms.com/v2/ckorjadkruk6m01xlcjrh3vh1/master"
+const endpoint = 'https://api-eu-central-1.graphcms.com/v2/ckorjadkruk6m01xlcjrh3vh1/master'
 
-const graphcms = new GQLRequest.GraphQLClient(endpoint);
+const graphcms = new GQLRequest.GraphQLClient(endpoint)
 
 const getPosts = async () => {
-  const queryResult = await graphcms.request( 
-  `{
+  const queryResult = await graphcms.request(
+    `{
     posts {
       slug
       title
@@ -22,12 +21,13 @@ const getPosts = async () => {
         html
       }
     }
-  }`)
-    return queryResult.posts
+  }`
+  )
+  return queryResult.posts
 }
 
-const getSinglePost = async (postSlug)  => {
-const query = `query singlePostQuery($slug: String) {
+const getSinglePost = async (postSlug) => {
+  const query = `query singlePostQuery($slug: String) {
   posts(where: {slug: $slug}) {
     slug
     title
@@ -40,12 +40,11 @@ const query = `query singlePostQuery($slug: String) {
     }
   }
 }`
-const queryResult = await graphcms.request(query, {
-  "slug": postSlug, 
-
-})     
+  const queryResult = await graphcms.request(query, {
+    slug: postSlug
+  })
   return queryResult.posts[0]
 }
 
 // getSinglePost('technical-seo-with-graphcms').then(result => console.log(result.content.html))
-module.exports = {getPosts, getSinglePost}
+module.exports = { getPosts, getSinglePost }

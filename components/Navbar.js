@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = [
@@ -7,28 +7,27 @@ const navigation = [
   { name: 'Roadmap', href: '#' },
   { name: 'Team', href: '#' },
   { name: 'Community', href: '#' }
-];
+]
 
 export default function Example() {
   useEffect(() => {
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-      // let prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-
-      // let currentScrollPos = window.pageYOffset;
+    // let prevScrollpos = window.pageYOffset
+    window.onscroll = function () {
+      // let currentScrollPos = window.pageYOffset
       if (window.pageYOffset < 100) {
-        document.getElementById('main-nav').style.top = '0';
+        document.getElementById('main-nav').style.top = '0'
       } else {
-        document.getElementById('main-nav').style.top = '-150px';
+        document.getElementById('main-nav').style.top = '-150px'
       }
-      // prevScrollpos = currentScrollPos;
-    };
-  });
+      // prevScrollpos = currentScrollPos
+    }
+  })
   return (
     <header id="main-nav" className="fixed top-0 left-0 w-full z-10">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="w-full py-6 flex items-center justify-between border-b border-green-500 lg:border-none">
-          <a href="#">
+          <a href="/">
             <img className="h-10 w-auto" src="logo07.png" alt="" />
           </a>
           <div className="flex items-center">
@@ -70,19 +69,18 @@ export default function Example() {
 
       <style jsx>{`
         #main-nav {
-          transition: top .5s;
+          transition: top 0.5s;
           backdrop-filter: blur(1px);
-
         }
 
         a img {
-          color: "#00fa94";
+          color: '#00fa94';
         }
 
-        *{
+        * {
           color: #00fa94;
-        }  
+        }
       `}</style>
     </header>
-  );
+  )
 }

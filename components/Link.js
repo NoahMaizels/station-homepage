@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 export default function ActiveLink({ href, children }) {
   const router = useRouter()
   let className = children.props.className || ''
-  if (router.pathname === href ) {
+  if (router.pathname === href) {
     className = `${className} selected`
   }
 
