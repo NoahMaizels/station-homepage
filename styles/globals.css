@@ -55,7 +55,9 @@ body {
   z-index: -100;
 }
 article.blog-post * {
-  color: white;
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));	
+  
 }
 h2{
   color: inherit;

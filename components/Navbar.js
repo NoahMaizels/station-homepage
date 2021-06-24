@@ -36,7 +36,7 @@ export default function Example() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-gilroy-bold text-base text-lg font-bold">
+                  className="font-gilroy-bold transition-colors hover:text-gray-200 text-base text-lg font-bold hover:text-gray-200">
                   {link.name}
                 </a>
               ))}
@@ -60,7 +60,7 @@ export default function Example() {
             <a
               key={link.name}
               href={link.href}
-              className="font-gilroy text-base font-medium text-white hover:text-indigo-50">
+              className="font-gilroy text-base font-medium text-gray-200 hover:text-indigo-50">
               {link.name}
             </a>
           ))}

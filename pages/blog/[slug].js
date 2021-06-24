@@ -44,23 +44,23 @@ const PostPage = (props) => {
       </Head>
       <div className="relative min-h-screen pt-16 sm:pt-24 lg:pt-32">
         {/* <div className="mx-auto px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-            <p className="mb-20 max-w-4xl   mx-auto text-6xl inconsolata font-white text-white ">
+            <p className="mb-20 max-w-4xl   mx-auto text-6xl inconsolata font-white text-gray-200 ">
             {props.post ? props.post.title : ""}
              </p>
         </div> */}
         <div className="max-w-5xl mx-auto">
           <div className="relative py-16   overflow-hidden">
             <div className="relative px-4 sm:px-6 lg:px-8">
-              <article className="blog-post text-white mx-auto prose lg:prose-xl">
+              <article className="blog-post text-gray-200 mx-auto prose lg:prose-xl">
                 <h1>
-                  <span className="mt-2 mb-20 text-white block text-3xl text-center leading-8 font-extrabold tracking-tight  sm:text-4xl">
+                  <span className="mt-2 mb-20 text-gray-200 block text-3xl text-center leading-8 font-extrabold tracking-tight  sm:text-4xl">
                     {props.post ? props.post.title : ''}
                   </span>
                 </h1>
                 {newElements ? newElements : ''}
               </article>
 
-              {/* <article className="blog-post text-white mx-auto prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: props.post === undefined ? "" : props.post.html}} /> */}
+              {/* <article className="blog-post text-gray-200 mx-auto prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: props.post === undefined ? "" : props.post.html}} /> */}
             </div>
           </div>
         </div>

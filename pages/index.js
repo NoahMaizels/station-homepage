@@ -42,16 +42,16 @@ export default function Index() {
           <div className="w-56 pt-60 mx-auto">
             <Image src={logoOnly} />
           </div>
-          <h1 className="mt-24 text-center text-6xl font-gilroy font-bold text-white">
+          <h1 className="mt-24 text-center text-6xl font-gilroy font-bold text-gray-200">
             Where Derivatives Live
           </h1>
-          <h2 className="mt-4 text-center max-w-xl text-lg mx-auto font-open-sans text-white">
+          <h2 className="mt-4 text-center max-w-xl text-lg mx-auto font-open-sans text-gray-200">
             Get simple, secure, efficient, and decentralized access to aggregated derivatives from
             multiple defi platforms on multiple blockchains.
           </h2>
           <button
             type="button"
-            className="mt-8 px-10 mb-32 block text-lg font-gilroy-bold mx-auto items-center  py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            className="transition-colors hover:bg-gray-200 mt-8 px-10 mb-32 block text-lg font-gilroy-bold mx-auto items-center  py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Discover Station
           </button>
           <div className="h-px"></div>
