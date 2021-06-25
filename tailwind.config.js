@@ -19,10 +19,9 @@ module.exports = {
         lightPurple: '#a597e5ff'
       }),
       backgroundImage: (theme) => ({
-        'train': "url('public/bg-train.svg')",
-        'laptop': "url('public/bg-laptop.svg')",
-        'pyramid': "url('public/bg-train.svg')",
-        
+        train: "url('public/bg-train.svg')",
+        laptop: "url('public/bg-laptop.svg')",
+        pyramid: "url('public/bg-train.svg')"
       }),
       backgroundColor: (theme) => ({
         ...theme('colors'),

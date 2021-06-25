@@ -5,8 +5,6 @@ import Thorchain from 'components/Thorchain'
 import Train from 'components/Train'
 import Challenges from 'components/challenges'
 
-
-
 import Image from 'next/image'
 import logoOnly from 'public/logoOnly.png'
 import { useEffect } from 'react'
@@ -22,8 +20,8 @@ export default function Index() {
         showDots: false,
         color: '#0af584',
         backgroundColor: '#474782',
-        points: 15,
-        maxDistance: 23,
+        points: 18,
+        maxDistance: 25,
         spacing: 20,
         scale: 1,
         scaleMobile: 1.0
@@ -42,6 +40,7 @@ export default function Index() {
 
       <Navbar></Navbar>
       <div id="bg-element">
+        <div className="blur-2">
         <div className="px-5">
           <div className="w-56 pt-60 mx-auto">
             <Image src={logoOnly} />
@@ -60,12 +59,17 @@ export default function Index() {
           </button>
           <div className="h-px"></div>
         </div>
+    
+        </div>
+      
       </div>
       <Thorchain></Thorchain>
       <Train></Train>
       <Challenges></Challenges>
 
       <style jsx>{`
+      
+
         #bg-element {
           width: 100%;
         }
