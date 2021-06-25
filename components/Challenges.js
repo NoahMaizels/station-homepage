@@ -6,7 +6,7 @@ const challenges = [
     name: 'Lack of Competition',
     description:
       'Individual platforms sell proprietary options with little competition. Users have nowhere to compare prices, creating market ineﬃciency and stifling innovation.',
-    icon: GlobeAltIcon,
+    icon: GlobeAltIcon
   },
   {
     name: 'No hidden fees',
