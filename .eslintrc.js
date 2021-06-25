@@ -19,9 +19,12 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    "next", 
+    "prettier",
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
+    'plugin:prettier/recommended', // Make this the last element so prettier config overrides other formatting rules
+
   ],
   rules: {
     'react/prop-types': 'off',
