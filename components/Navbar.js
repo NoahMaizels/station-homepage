@@ -51,6 +51,9 @@ export default function Navbar() {
     }
   })
   return (
+    <div>
+
+
     <Popover>
       {({ open }) => (
         <>
@@ -77,7 +80,7 @@ export default function Navbar() {
                   </a>
                 ))}
               </Popover.Group>
-              <div className="hidden lg:flex space-x-4 items-center justify-end    ">
+              <div className="hidden lg:flex space-x-4 items-center justify-end ">
                 <a
                   className="navIcon"
                   onMouseOver={handleMouseOver}
@@ -335,5 +338,12 @@ export default function Navbar() {
         </>
       )}
     </Popover>
+    <style jsx>{`
+        #main-nav {
+          backdrop-filter: blur(2px);
+
+        }
+      `}</style>
+    </div>
   )
 }

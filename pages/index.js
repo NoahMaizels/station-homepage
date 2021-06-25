@@ -1,8 +1,11 @@
 /* eslint no-undef: 0*/
-
 import Head from 'next/head'
 import Navbar from 'components/Navbar'
 import Thorchain from 'components/Thorchain'
+import Train from 'components/Train'
+import Challenges from 'components/challenges'
+
+
 
 import Image from 'next/image'
 import logoOnly from 'public/logoOnly.png'
@@ -19,8 +22,8 @@ export default function Index() {
         showDots: false,
         color: '#0af584',
         backgroundColor: '#474782',
-        points: 20,
-        maxDistance: 25,
+        points: 15,
+        maxDistance: 23,
         spacing: 20,
         scale: 1,
         scaleMobile: 1.0
@@ -43,7 +46,7 @@ export default function Index() {
           <div className="w-56 pt-60 mx-auto">
             <Image src={logoOnly} />
           </div>
-          <h1 className="tracking-tight mt-24 text-center text-6xl font-gilroy font-bold text-gray-200">
+          <h1 className="tracking-tight mt-24 text-center sm:text-6xl text-5xl font-gilroy font-bold text-gray-200">
             Where Derivatives Live
           </h1>
           <h2 className="mt-4 text-center max-w-xl text-lg mx-auto font-open-sans text-gray-200">
@@ -59,10 +62,8 @@ export default function Index() {
         </div>
       </div>
       <Thorchain></Thorchain>
-
-      <main className="">
-        <h1>Test</h1>
-      </main>
+      <Train></Train>
+      <Challenges></Challenges>
 
       <style jsx>{`
         #bg-element {

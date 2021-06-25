@@ -15,10 +15,14 @@ module.exports = {
       textColor: (theme) => ({
         ...theme('colors'),
         primary: '#0af584',
-        secondary: '#474782'
+        secondary: '#474782',
+        lightPurple: '#a597e5ff'
       }),
       backgroundImage: (theme) => ({
-        // 'gradient': "url('public/services_background.jpg')",
+        'train': "url('public/bg-train.svg')",
+        'laptop': "url('public/bg-laptop.svg')",
+        'pyramid': "url('public/bg-train.svg')",
+        
       }),
       backgroundColor: (theme) => ({
         ...theme('colors'),
