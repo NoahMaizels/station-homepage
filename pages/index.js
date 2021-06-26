@@ -22,11 +22,11 @@ export default function Index() {
       showDots: false,
       color: '#0af584',
       backgroundColor: '#474782',
-      points: 20,
-      maxDistance: 18,
+      points: 12,
+      maxDistance: 24,
       spacing: 20,
       scale: 1,
-      scaleMobile: 0.5
+      scaleMobile: 1
     })
     {
       effect
