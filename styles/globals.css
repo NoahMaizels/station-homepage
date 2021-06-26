@@ -14,13 +14,8 @@ body {
   font-style: 'Extra Bold';
 }
 
-.blur-1 {
-  backdrop-filter: blur(1px);
-}
- 
-
-.blur-2 {
-  backdrop-filter: blur(2px);
+.blur {
+  backdrop-filter: blur(0.65px);
 }
  
 

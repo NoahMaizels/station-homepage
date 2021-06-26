@@ -6,7 +6,7 @@ import balancer from 'public/balancer.png'
 
 export default function Network() {
   return (
-    <div className="relative bg-white pt-16 pb-32 overflow-hidden ">
+    <div className="relative bg-gray-100 pt-16 pb-32 overflow-hidden ">
       <div className="relative">
         <div className="mx-auto lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense mb-20">
           <div className=" ">
