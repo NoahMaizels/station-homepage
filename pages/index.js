@@ -16,15 +16,15 @@ export default function Index() {
   useEffect(() => {
     const effect = VANTA.NET({
       el: '#bg-element',
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: true,
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
       showDots: false,
       color: '#0af584',
       backgroundColor: '#474782',
       points: 20,
       maxDistance: 20,
-      spacing: 20,
+      spacing: 15,
       scale: 1,
       scaleMobile: 1.0
     })
