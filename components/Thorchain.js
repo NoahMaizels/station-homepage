@@ -19,7 +19,9 @@ export default function Thorchain() {
   return (
     <div className="relative bg-gray-200 pt-1 pb-16 sm:pb-24 lg:pb-32 px-5 ">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="tracking-tight mx-auto mt-16 pb-10 text-center max-w-sm text-4xl font-gilroy font-bold text-secondary">THORChain&apos;s Cross‑chain Solution</h2>
+        <h2 className="tracking-tight mx-auto mt-16 pb-10 text-center max-w-sm text-4xl font-gilroy font-bold text-secondary">
+          THORChain&apos;s Cross‑chain Solution
+        </h2>
 
         <div className="mt-12">
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-8 sm:grid-cols-2 ">
@@ -28,7 +30,7 @@ export default function Thorchain() {
                 <div className="flow-root rounded-lg pb-8">
                   <div className="-mt-6">
                     <div>
-                      <div className="bg-white items-center justify-center p-3 rounded-md">
+                      <div className="bg-gray-50 items-center justify-center p-3 rounded-lg">
                         <div className="mx-auto w-36 pt-10 pb-5">
                           <Image src={item.image} />
                         </div>
