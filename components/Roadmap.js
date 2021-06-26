@@ -102,7 +102,7 @@ export default function Roadmap() {
                   : ''
               }
               ${month.name === 'AUGUST' ? 'pt-16 ' : ''}
-              mx-auto h-full w-full md:pr-8 md:ml-0 md:pl-0 pl-8 md:pt-0 pb-6 `}
+              mx-auto h-full w-full md:pr-8 md:ml-0 md:pl-0 pl-8 md:pt-0  pb-6 `}
               key={month.name}>
               <h2
                 className={`${
@@ -134,7 +134,7 @@ export default function Roadmap() {
                 width="50"
                 src="triangle.png"
               />
-              <div className="flex h-full flex-col justify-start bg-dark rounded-lg ">
+              <div className="flex h-full flex-col justify-start bg-dark pt-6git a rounded-lg ">
                 <p
                   className={`text-primary tracking-widest font-gilroy text-left pl-8 font-thin text-lg`}>
                   {month.name}
