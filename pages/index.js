@@ -7,6 +7,7 @@ import Challenges from 'components/Challenges'
 import Solutions from 'components/Solutions'
 import Network from 'components/Network'
 import Platforms from 'components/Platforms'
+import Roadmap from 'components/Roadmap'
 
 import Image from 'next/image'
 import logoOnly from 'public/logoOnly.png'
@@ -70,6 +71,7 @@ export default function Index() {
       <Solutions></Solutions>
       <Network></Network>
       <Platforms></Platforms>
+      <Roadmap></Roadmap>
       <style jsx>{`
         #bg-element {
           width: 100%;

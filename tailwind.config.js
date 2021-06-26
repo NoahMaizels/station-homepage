@@ -21,13 +21,14 @@ module.exports = {
       backgroundImage: (theme) => ({
         train: "url('public/bg-train.svg')",
         laptop: "url('public/bg-laptop.svg')",
-        pyramid: "url('public/bg-train.svg')"
+        pyramid: "url('public/bg-pyramid.png')"
       }),
       backgroundColor: (theme) => ({
         ...theme('colors'),
         primary: '#0af584',
         secondary: '#474782',
-        dark: '#333266'
+        dark: '#333266',
+        light: '#504796ff'
       }),
       gridTemplateColumns: {
         'sm-330': 'repeat(1, minmax(0, 330px))',
