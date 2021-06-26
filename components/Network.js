@@ -6,13 +6,49 @@ import balancer from 'public/balancer.png'
 
 export default function Network() {
   return (
-    <div className="relative bg-white pt-16 pb-32 overflow-hidden">
+    <div className="relative bg-white pt-16 pb-32 overflow-hidden ">
       <div className="relative">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+        <div className="mx-auto lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense mb-20">
+          <div className=" ">
             <div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2 className="text-4xl font-extrabold font-gilroy text-secondary tracking-tight text-gray-900">
+                  A Network of Substations
+                </h2>
+                <p className="mt-4 text-md font-open-sans text-gray-500">
+                Users across networks interact via their chain’s SubStation. Asset swaps are processed using THORChain cross-chain liquidity swaps. Station then sends instructions to complete the transaction to the SubStation to the native chain for the derivative being purchased.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-12 sm:mt-16 lg:mt-0 col-span-2">
+            <div className="">
+              <div className="">
+                <Image 
+                    src={substation}
+                  
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mx-auto px-4 lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense flex flex-col-reverse">
+        <div className="mt-12 sm:mt-16 lg:mt-0 col-span-2">
+            <div className="">
+              <div className="">
+                <Image 
+                    src={substation}
+                  
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className=" ">
+            <div>
+              <div className="mt-6">
+                <h2 className="text-4xl font-extrabold font-gilroy tracking-tight text-secondary">
                   Stay on top of customer support
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
@@ -23,52 +59,10 @@ export default function Network() {
               </div>
             </div>
           </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <div className="max-w-lg">
-                <Image src={substation} />
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
-      <div className="mt-24">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-            <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                  <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                </span>
-              </div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Better understand your customers
-                </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada
-                  faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis
-                  sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
-                    Get started
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-            <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <div className="max-w-lg">
-                <Image src={balancer} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   )
 }
