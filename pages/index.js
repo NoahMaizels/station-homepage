@@ -42,7 +42,7 @@ export default function Index() {
 
       <Navbar></Navbar>
       <div id="bg-element">
-        <div className="blur-2">
+        <div className="blur-1">
           <div className="px-5">
             <div className="w-56 pt-60 mx-auto">
               <Image src={logoOnly} />
