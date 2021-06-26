@@ -8,28 +8,28 @@ import Solutions from 'components/Solutions'
 import Network from 'components/Network'
 import Platforms from 'components/Platforms'
 import Roadmap from 'components/Roadmap'
-
 import Image from 'next/image'
 import logoOnly from 'public/logoOnly.png'
 import { useEffect } from 'react'
 
 export default function Index() {
   useEffect(() => {
+    const effect = VANTA.NET({
+      el: '#bg-element',
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      showDots: false,
+      color: '#0af584',
+      backgroundColor: '#474782',
+      points: 20,
+      maxDistance: 20,
+      spacing: 20,
+      scale: 1,
+      scaleMobile: 1.0
+    })
     {
-      VANTA.NET({
-        el: '#bg-element',
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        showDots: false,
-        color: '#0af584',
-        backgroundColor: '#474782',
-        points: 18,
-        maxDistance: 25,
-        spacing: 20,
-        scale: 1,
-        scaleMobile: 1.0
-      })
+      effect
     }
   }, [])
   return (
