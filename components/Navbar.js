@@ -227,7 +227,7 @@ export default function Navbar() {
                           <a
                             key={item.name}
                             href={item.href}
-                            className="-m-3 p-2 flex items-center font-gilroy text-primary font-semibold">
+                            className="-m-3 p-2 hover:text-gray-200 flex items-center font-gilroy text-primary font-semibold">
                             {item.name}
                           </a>
                         ))}
@@ -339,9 +339,7 @@ export default function Navbar() {
         )}
       </Popover>
       <style jsx>{`
-        #main-nav {
-          backdrop-filter: blur(2px);
-        }
+ 
       `}</style>
     </div>
   )
