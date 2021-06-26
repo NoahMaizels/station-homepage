@@ -8,28 +8,28 @@ const solutions = [
   {
     name: 'Aggregation',
     description:
-    'Aggregate real time price estimates from each platform so users can make informed choices and ﬁnd the best prices.',
+      'Aggregate real time price estimates from each platform so users can make informed choices and ﬁnd the best prices.',
     image: solutionImg01,
     num: 1
   },
   {
     name: 'Positive Feedback Mechanism',
     description:
-    'Better and simpler access for new users increases trade volume. More trades lead to higher TVL. More rewards encourage more participation from liquidity providers.',
+      'Better and simpler access for new users increases trade volume. More trades lead to higher TVL. More rewards encourage more participation from liquidity providers.',
     image: solutionImg02,
     num: 2
   },
   {
     name: 'Cross‑chain Payment Solution',
     description:
-    'Our THORChain integration allows for payment with a growing list of many native (not wrapped) assets. Our Balancer v2 integration solves for disparate payment tokens For Ethereum DeFi options platforms.',
+      'Our THORChain integration allows for payment with a growing list of many native (not wrapped) assets. Our Balancer v2 integration solves for disparate payment tokens For Ethereum DeFi options platforms.',
     image: solutionImg03,
     num: 3
   },
   {
     name: 'Multi‑chain Smart Order Routing',
     description:
-    'Station seeks to satisfy the increasing demand for on-chain derivatives by integrating existing and future DeFi derivatives platforms on any chain.',
+      'Station seeks to satisfy the increasing demand for on-chain derivatives by integrating existing and future DeFi derivatives platforms on any chain.',
     image: solutionImg04,
     num: 4
   }
@@ -55,8 +55,7 @@ export default function Solutions() {
                 </p>
               </dt>
               <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-5 rounded-md">
-                <Image src={solution.image}
-                />
+                <Image src={solution.image} />
               </div>
               <dd className="mt-2 text-base text-gray-200">{solution.description}</dd>
             </div>

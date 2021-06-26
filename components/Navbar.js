@@ -338,9 +338,7 @@ export default function Navbar() {
           </>
         )}
       </Popover>
-      <style jsx>{`
- 
-      `}</style>
+      <style jsx>{``}</style>
     </div>
   )
 }

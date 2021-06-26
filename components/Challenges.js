@@ -8,28 +8,28 @@ const challenges = [
   {
     name: 'Lack of Competition',
     description:
-    'Individual platforms sell proprietary options with little competition. Users have nowhere to compare prices, creating market ineﬃciency and stiﬂing innovation.',
+      'Individual platforms sell proprietary options with little competition. Users have nowhere to compare prices, creating market ineﬃciency and stiﬂing innovation.',
     image: challengeImg01,
     num: 1
   },
   {
     name: 'Broken Flywheel Discourages Liquidity Growth',
     description:
-    'Single platforms cannot attract enough liquidity to service large demand. Persistent low derivatives volume does not create the ﬂywheel eﬀect necessary to encourage liquidity providers.',
+      'Single platforms cannot attract enough liquidity to service large demand. Persistent low derivatives volume does not create the ﬂywheel eﬀect necessary to encourage liquidity providers.',
     image: challengeImg02,
     num: 2
   },
   {
     name: 'Payment Limitations',
     description:
-    'Users overpaid $2b for DeFi derivatives in 2020 due to marketplace distortions and limited cross-chain payment options, often which are awkwardly bridged and wrapped crypto assets.',
+      'Users overpaid $2b for DeFi derivatives in 2020 due to marketplace distortions and limited cross-chain payment options, often which are awkwardly bridged and wrapped crypto assets.',
     image: challengeImg03,
     num: 3
   },
   {
     name: 'Fragmentation Across Blockchains',
     description:
-    'DeFi is meant to be cross-chain. As it expands across multiple blockchain ecosystems (Solana, Polkadot, Matic, BSC, etc.), a single interface is necessary to aggregate liquidity and data visualization.',
+      'DeFi is meant to be cross-chain. As it expands across multiple blockchain ecosystems (Solana, Polkadot, Matic, BSC, etc.), a single interface is necessary to aggregate liquidity and data visualization.',
     image: challengeImg04,
     num: 4
   }
@@ -55,8 +55,7 @@ export default function Challenges() {
                 </p>
               </dt>
               <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-5 rounded-md">
-                <Image src={challenge.image}
-                />
+                <Image src={challenge.image} />
               </div>
               <dd className="mt-2 text-base text-gray-200">{challenge.description}</dd>
             </div>

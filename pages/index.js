@@ -5,6 +5,7 @@ import Thorchain from 'components/Thorchain'
 import Train from 'components/Train'
 import Challenges from 'components/Challenges'
 import Solutions from 'components/Solutions'
+import Network from 'components/Network'
 
 import Image from 'next/image'
 import logoOnly from 'public/logoOnly.png'
@@ -66,6 +67,7 @@ export default function Index() {
       <Train></Train>
       <Challenges></Challenges>
       <Solutions></Solutions>
+      <Network></Network>
       <style jsx>{`
         #bg-element {
           width: 100%;
