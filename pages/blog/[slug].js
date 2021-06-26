@@ -53,9 +53,7 @@ const PostPage = (props) => {
             <div className="relative px-4 sm:px-6 lg:px-8">
               <article className="blog-post text-gray-200 mx-auto prose lg:prose-xl">
                 <h1>
-                  <span className="mt-2 mb-20 text-gray-200 block text-3xl text-center leading-8 font-extrabold tracking-tight  sm:text-4xl">
-                    {props.post ? props.post.title : ''}
-                  </span>
+                  <span className="mt-2 mb-20 text-gray-200 block text-3xl text-center leading-8 font-extrabold tracking-tight  sm:text-4xl">{props.post ? props.post.title : ''}</span>
                 </h1>
                 {newElements ? newElements : ''}
               </article>

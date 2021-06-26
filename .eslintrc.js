@@ -27,6 +27,7 @@ module.exports = {
   ],
   rules: {
     'react/prop-types': 'off',
+    // 'no-irregular-whitespace': 'off',
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/mouse-events-have-key-events': 'off',
