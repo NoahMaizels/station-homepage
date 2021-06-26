@@ -104,7 +104,10 @@ export default function Roadmap() {
               ${month.name === 'AUGUST' ? 'pt-16 ' : ''}
               mx-auto w-full md:pr-8 md:ml-0 md:pl-0 pl-8 md:pt-0 pb-6`}
               key={month.name}>
-              <h2 className={`${month.name === '' ? 'hidden': ''} md:hidden absolute transform -translate-y-1 -translate-x-28 text-primary font-gilroy text-4xl font-extrabold`}>
+              <h2
+                className={`${
+                  month.name === '' ? 'hidden' : ''
+                } md:hidden absolute transform -translate-y-1 -translate-x-28 text-primary font-gilroy text-4xl font-extrabold`}>
                 {month.name === 'AUGUST'
                   ? 'Q3'
                   : month.name === 'OCTOBER'
