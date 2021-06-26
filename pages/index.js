@@ -22,8 +22,8 @@ export default function Index() {
       showDots: false,
       color: '#0af584',
       backgroundColor: '#474782',
-      points: 20,
-      maxDistance: 20,
+      points: 15,
+      maxDistance: 18,
       spacing: 15,
       scale: 1,
       scaleMobile: 1.0
