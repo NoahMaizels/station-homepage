@@ -72,6 +72,7 @@ export default function Index() {
       <Network></Network>
       <Platforms></Platforms>
       <Roadmap></Roadmap>
+      {/* <ScrollToTop></ScrollToTop> */}
       <style jsx>{`
         #bg-element {
           width: 100%;

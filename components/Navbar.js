@@ -6,9 +6,9 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Overview', href: '#' },
-  { name: 'How It Works', href: '#' },
-  { name: 'Roadmap', href: '#' },
+  { name: 'Overview', href: '#overview' },
+  { name: 'How It Works', href: '#howitworks' },
+  { name: 'Roadmap', href: '/#roadmap' },
   { name: 'Team', href: '#' },
   { name: 'Community', href: '#' }
 ]
@@ -47,8 +47,14 @@ export default function Navbar() {
       } else {
         document.getElementById('main-nav').style.top = '-150px'
       }
-      // prevScrollpos = currentScrollPos
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = 'block'
+      } else {
+        mybutton.style.display = 'none'
+      }
     }
+    //Get the button:
+    const mybutton = document.getElementById('myBtn')
   })
   return (
     <div>
@@ -338,7 +344,86 @@ export default function Navbar() {
           </>
         )}
       </Popover>
-      <style jsx>{``}</style>
+      <button
+        onClick={() => {
+          document.body.scrollTop = 0 // For Safari
+          document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+        }}
+        id="myBtn"
+        className="focus-visible:outline-none focus:outline-none"
+        title="Go to top">
+        <a href="#" className="" id="return-to-top">
+          <i className="  icon-chevron-up"></i>
+        </a>
+      </button>
+      <style jsx>{`
+        #myBtn {
+          -webkit-touch-callout: none !important;
+          outline-width: 0;
+          outline: none;
+          -webkit-user-select: none !important;
+          -khtml-user-select: none !important;
+          -moz-user-select: none !important;
+          -ms-user-select: none !important;
+          user-select: none !important;
+          display: none; /* Hidden by default */
+          position: fixed; /* Fixed/sticky position */
+          bottom: 20px; /* Place the button at the bottom of the page */
+          right: 30px; /* Place the button 30px from the right */
+          z-index: 99; /* Make sure it does not overlap */
+          background: rgb(0, 0, 0);
+          background: rgba(f0, 0, 0, 0.7);
+          width: 50px;
+          height: 50px;
+          text-decoration: none;
+          -webkit-border-radius: 35px;
+          -moz-border-radius: 35px;
+          border-radius: 35px;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+        }
+        #myBtn:focus {
+          outline: none;
+        }
+        #return-to-top:focus {
+          outline: none;
+        }
+        #return-to-top i:focus {
+          outline: none;
+        }
+        #myBtn:focus-visible {
+          outline: none;
+        }
+        #return-to-top:focus-visible {
+          outline: none;
+        }
+        #return-to-top i:focus-visible {
+          outline: none;
+        }
+        #myBtn:hover {
+          background-color: #555; /* Add a dark-grey background on hover */
+        }
+        #return-to-top i {
+          color: #fff;
+          margin: 0;
+          position: relative;
+          left: 0px;
+          top: 0px;
+          font-size: 19px;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+        }
+        #myBtn:hover #return-to-top i {
+          color: #fff;
+          top: 5px;
+        }
+      `}</style>
     </div>
   )
 }

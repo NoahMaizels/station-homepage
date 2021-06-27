@@ -5,7 +5,7 @@ import balancer from 'public/balancer.png'
 
 export default function Network() {
   return (
-    <div className="relative bg-gray-50 pt-16 pb-32 overflow-hidden ">
+    <div id="howitworks" className="relative bg-gray-50 pt-16 pb-32 overflow-hidden ">
       <div className="relative">
         <div className="mx-auto lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense mb-20">
           <div className=" ">
@@ -26,7 +26,7 @@ export default function Network() {
           <div className="mt-12 sm:mt-16 lg:mt-0 col-span-2">
             <div className="">
               <div className="">
-                <Image src={substation} />
+                <Image quality={25} src={substation} />
               </div>
             </div>
           </div>

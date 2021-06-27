@@ -64,10 +64,15 @@ const triangleCss = (month) => {
 }
 export default function Roadmap() {
   return (
-    <div className="bg-light pt-20 md:px-10 pr-4 sm:px-4">
-      <div className="mx-auto max-w-5xl bg-pyramid bg-center bg-top bg-contain bg-no-repeat">
-        <div className="md:h-96 h-64"></div>
-        <div className="md:h-44 h-0"></div>
+    <div id="roadmap" className="bg-light pt-24 sm:px-10 px-4">
+      <div className="mx-auto max-w-5xl">
+        <h1 className="sm:text-left text-center pb-5 text-gray-200 text-6xl font-gilroy font-extrabold">
+          Roadmap
+        </h1>
+      </div>
+      <div className="mx-auto max-w-5xl bg-pyramid bg-right bg-top bg-contain bg-no-repeat">
+        <div className="sm:h-72 h-64"></div>
+        <div className="md:h-36"></div>
         <div className="md:flex flex-row hidden mb-20 mx-auto">
           {quarters.map((quarter) => (
             <div key={quarter} className="mt-20 border-t-8 border-white h-2 w-full">
@@ -85,7 +90,7 @@ export default function Roadmap() {
           ))}
         </div>
 
-        <div className="md:mx-auto ml-20 sm:grid flex flex-col md:max-w-5xl max-w-lg md:grid-cols-3 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-3">
+        <div className="md:mx-auto ml-16 sm:grid flex flex-col md:max-w-5xl max-w-lg md:grid-cols-3 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-3">
           {roadmapItems.map((month) => (
             <div
               className={`
@@ -136,7 +141,7 @@ export default function Roadmap() {
               />
               <div className="flex h-full flex-col justify-start bg-dark pt-6git a rounded-lg ">
                 <p
-                  className={`text-primary tracking-widest font-gilroy text-left pl-8 font-thin text-lg`}>
+                  className={`text-primary tracking-widest font-gilroy text-left pl-8 pt-8 font-thin text-lg`}>
                   {month.name}
                 </p>
                 <ul className="list-disc pl-10 pr-8 pb-16 pt-3 h-full">
@@ -151,6 +156,18 @@ export default function Roadmap() {
           ))}
         </div>
       </div>
+      <style jsx>
+        {`
+          /* .bg-pyramid {
+            background-size: 360px auto;
+          }
+          @media (min-width: 640px) {
+            .bg-pyramid {
+              background-size: 640px auto;
+            }
+          } */
+        `}
+      </style>
     </div>
   )
 }
