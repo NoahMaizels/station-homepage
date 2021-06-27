@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Image from 'next/image'
-import substation from 'public/substation.png'
-import balancer from 'public/balancer.png'
+import substation from 'public/substation.jpg'
+import balancer from 'public/balancer.jpg'
 
 export default function Network() {
   return (

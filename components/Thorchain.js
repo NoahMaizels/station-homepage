@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import thor01 from 'public/thor01.png'
-import thor02 from 'public/thor02.png'
+import thor01 from 'public/thor01.jpg'
+import thor02 from 'public/thor02.jpg'
 
 const items = [
   {
