@@ -16,8 +16,8 @@ export default function Index() {
   useEffect(() => {
     const effect = VANTA.NET({
       el: '#bg-element',
-      mouseControls: false,
-      touchControls: false,
+      mouseControls: true,
+      touchControls: true,
       gyroControls: false,
       showDots: false,
       color: '#0af584',
