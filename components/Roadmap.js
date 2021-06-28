@@ -1,7 +1,6 @@
- 
 const quarters = ['Q3', 'Q4', 'Q1']
 
-const Q4 = () => (
+const Q1 = () => (
   <>
     <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
       Integrate SubStations onto the mainnets of:
@@ -38,7 +37,7 @@ const Q4 = () => (
   </>
 )
 
-const Q1 = () => (
+const Q4 = () => (
   <>
     <li className="text-left text-gray-200 pb-2 text-base font-open-sans">BSC integration.</li>
     <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
@@ -109,7 +108,7 @@ export default function Roadmap() {
   return (
     <div id="roadmap" className="bg-light py-16 sm:py-24 lg:py-32 pb-36 sm:px-10">
       <div className="mx-auto max-w-5xl">
-        <h1 className="sm:text-left text-center pb-5 text-gray-200 text-5xl font-gilroy font-extrabold">
+        <h1 className="md:text-left text-center pb-5 text-gray-200 text-5xl font-gilroy font-extrabold">
           Roadmap
         </h1>
       </div>
