@@ -19,7 +19,7 @@ import Roadmap from 'components/Roadmap'
 import Team from 'components/Team'
 
 export default function Index() {
-  const matches = useMediaQuery('(min-width: 400px)')
+  const matches = useMediaQuery('(min-device-width: 1000px)')
   console.log(matches)
   useEffect(() => {
     const effect = VANTA.NET({
@@ -39,7 +39,6 @@ export default function Index() {
     {
       effect
     }
-    effect.resize()
   }, [])
   return (
     <div className="bg-secondary">
