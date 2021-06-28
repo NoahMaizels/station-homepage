@@ -1,34 +1,4 @@
-const roadmapItems = [
-  {
-    name: 'Q3',
-    items: [
-      'Station V1 single-chain Ethereum derivatives aggregator.',
-      `Premia, Hegic, Opyn, Auctus, Hedget, Opium `,
-      'THORChain for Cross-Asset Purchases.',
-      'Smart Order Routing via both Thorchain & Balancer v2.'
-    ],
-    order: ''
-  },
-  {
-    name: 'Q4',
-    items: [
-      'BSC Expansion.',
-      'Testnet SubStations on Polygon, Polkadot, Solana, Terra.',
-      'Cross-chain purchases enabled for testnet SubStations.',
-      'Station V2 Testnet'
-    ],
-    order: ''
-  },
-  {
-    name: 'Q1',
-    items: [
-      'Integrate SubStations onto the mainnets of Polygon, Polkadot, Solana, and Terra.',
-      'Debut multi-chain front-end for Station V2.'
-    ],
-    order: ''
-  }
-]
-
+ 
 const quarters = ['Q3', 'Q4', 'Q1']
 
 const Q4 = () => (
@@ -164,47 +134,30 @@ export default function Roadmap() {
           ))}
         </div>
 
-        <div className="mx-auto grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 grid-rows-3 gap-y-0 md:gap-y-10 md:max-w-5xl max-w-md pr-4 ml-5">
-          {roadmapItems.map((month) => (
+        <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 grid-rows-3 gap-y-0 md:gap-y-10 md:max-w-5xl max-w-lg pr-4 md:w-full w-96 mx-auto ">
+          {quarters.map((quarter) => (
             <div
-              className={`roadmap-section border-l-8 md:border-l-0 border-white md:mx-auto ml-20 pl-8 h-full pb-10 max-w-md md:pr-8 md:ml-0 md:pl-0 md:pt-0 `}
-              key={month.name}>
-              <h2
-                className={`md:hidden absolute transform -translate-y-1 -translate-x-28 text-primary font-gilroy text-4xl font-extrabold`}>
-                <p className=""></p>
-              </h2>
+              className={`roadmap-section border-l-8 md:border-l-0 border-white md:mx-auto ml-2 pl-8 h-full pb-10 max-w-md md:pr-8 md:ml-0 md:pl-0 md:pt-0 pt-10`}
+              key={quarter}>
               <img
                 alt="line"
-                className={`translate-y-12 md:hidden -translate-x-14 -rotate-90 transform`}
+                className={`-translate-y-4 md:hidden -translate-x-14 -rotate-90 transform`}
                 width="50"
                 src="triangle.png"
               />
               <div className="flex h-full flex-col justify-start bg-dark rounded-lg pt-6  ">
                 <p
-                  className={`absolute transform md:-translate-y-6 md:-translate-x-32 -translate-y-5 -translate-x-28 font-extrabold md:text-5xl text-4xl text-primary font-gilroy md:hidden`}>
-                  {month.name}
+                  className={`absolute transform md:-translate-y-6 md:-translate-x-32 -translate-y-20 translate-x-1 font-extrabold md:text-5xl text-4xl text-primary font-gilroy md:hidden`}>
+                  {quarter}
                 </p>
                 <p
                   className={`${
-                    month.name !== 'Q1' ? 'hidden' : ''
-                  } absolute transform translate-y-8 md:-translate-x-40 -translate-x-32 font-extralight md:text-5xl text-4xl  text-primary font-gilroy md:hidden`}>
+                    quarter !== 'Q1' ? 'hidden' : ''
+                  } absolute transform  md:-translate-x-40 -translate-y-20 translate-x-14 font-extralight md:text-5xl text-4xl  text-primary font-gilroy md:hidden`}>
                   2022
                 </p>
                 <ul className="list-disc pl-10 pr-8 pb-16 pt-3 h-full">
-                  {month.name === 'Q3'
-                    ? Q3()
-                    : month.name === 'Q4'
-                    ? Q4()
-                    : month.name === 'Q1'
-                    ? Q1()
-                    : ''}
-                  {/* {month.items.map((month_item) => (
-                    <li
-                      className="text-left text-gray-200 pb-5 text-base font-open-sans"
-                      key={month_item}>
-                      {month_item}
-                    </li>
-                  ))} */}
+                  {quarter === 'Q3' ? Q3() : quarter === 'Q4' ? Q4() : quarter === 'Q1' ? Q1() : ''}
                 </ul>
               </div>
             </div>
