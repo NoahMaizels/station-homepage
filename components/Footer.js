@@ -1,4 +1,4 @@
-import { TwitterDark, TelegramannDark, TelegramDark } from './socials'
+import { TwitterDark, TelegramannDark, TelegramDark } from './Socials'
 import { useState } from 'react'
 
 export default function Train() {
