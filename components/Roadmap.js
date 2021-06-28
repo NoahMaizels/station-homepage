@@ -64,7 +64,7 @@ const triangleCss = (month) => {
 }
 export default function Roadmap() {
   return (
-    <div id="roadmap" className="bg-light pt-24 sm:px-10 px-4">
+    <div id="roadmap" className="bg-light pt-24 pb-36 sm:px-10 px-4">
       <div className="mx-auto max-w-5xl">
         <h1 className="sm:text-left text-center pb-5 text-gray-200 text-6xl font-gilroy font-extrabold">
           Roadmap
@@ -90,7 +90,7 @@ export default function Roadmap() {
           ))}
         </div>
 
-        <div className="md:mx-auto ml-16 sm:grid flex flex-col md:max-w-5xl max-w-lg md:grid-cols-3 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-3">
+        <div className="md:mx-auto ml-16 sm:grid flex flex-col md:max-w-5xl max-w-lg md:grid-cols-3 md:grid-rows-3 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-3">
           {roadmapItems.map((month) => (
             <div
               className={`

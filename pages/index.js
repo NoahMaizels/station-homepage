@@ -1,6 +1,15 @@
 /* eslint no-undef: 0*/
+import { useMediaQuery } from '@react-hook/media-query'
+
+import logoOnly from 'public/logoOnly.png'
+import { useEffect } from 'react'
+
+// Sub-components
 import Head from 'next/head'
 import Navbar from 'components/Navbar'
+import Image from 'next/image'
+
+// Main sections components
 import Thorchain from 'components/Thorchain'
 import Train from 'components/Train'
 import Challenges from 'components/Challenges'
@@ -8,11 +17,11 @@ import Solutions from 'components/Solutions'
 import Network from 'components/Network'
 import Platforms from 'components/Platforms'
 import Roadmap from 'components/Roadmap'
-import Image from 'next/image'
-import logoOnly from 'public/logoOnly.png'
-import { useEffect } from 'react'
+import Team from 'components/Team'
 
 export default function Index() {
+  const matches = useMediaQuery('(max-width: 500px)')
+
   useEffect(() => {
     const effect = VANTA.NET({
       el: '#bg-element',
@@ -24,7 +33,7 @@ export default function Index() {
       backgroundColor: '#474782',
       points: 12,
       maxDistance: 24,
-      spacing: 20,
+      spacing: matches ? 40 : 20,
       scale: 1,
       scaleMobile: 1
     })
@@ -72,6 +81,7 @@ export default function Index() {
       <Network></Network>
       <Platforms></Platforms>
       <Roadmap></Roadmap>
+      <Team></Team>
       {/* <ScrollToTop></ScrollToTop> */}
       <style jsx>{`
         #bg-element {
