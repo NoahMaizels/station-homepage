@@ -9,6 +9,14 @@ const people = [
     linkedinUrl: '#'
   },
   {
+    name: 'Chase Jacobsen',
+    role: 'CIO',
+    bio: "With a decade of Enterprise IT management experience across multiple sectors, Chase brings strategic offerings to empower Station's technology.",
+    imageUrl: 'chase.jpg',
+    twitterUrl: '#',
+    linkedinUrl: '#'
+  },
+  {
     name: 'Camie Garibaldi',
     role: 'Brand Manager',
     bio: 'Camie brings five years of graphic design and two years of media marketing and streaming experience. She excels in audience engagement and breathing life into ideas.',
