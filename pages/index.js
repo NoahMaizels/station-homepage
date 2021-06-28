@@ -1,5 +1,4 @@
 /* eslint no-undef: 0*/
-import { useMediaQuery } from '@react-hook/media-query'
 
 import logoOnly from 'public/logoOnly.png'
 import { useEffect } from 'react'
@@ -20,8 +19,6 @@ import Roadmap from 'components/Roadmap'
 import Team from 'components/Team'
 
 export default function Index() {
-  const matches = useMediaQuery('min-width: 500px')
-
   useEffect(() => {
     const effect = VANTA.NET({
       el: '#bg-element',
