@@ -37,9 +37,9 @@ const solutions = [
 
 export default function Solutions() {
   return (
-    <div className="py-12 bg-secondary">
+    <div className="pb-16 sm:pb-24 lg:pb-32 bg-secondary">
       <div className="md:max-w-xl max-w-sm mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
-        <h2 className="font-gilroy my-14 mx-auto font-bold text-center text-5xl text-gray-200">
+        <h2 className="font-gilroy my-14 mx-auto font-extrabold text-center text-5xl text-gray-200">
           Our Solutions
         </h2>
 

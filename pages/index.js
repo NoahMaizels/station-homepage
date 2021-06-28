@@ -17,10 +17,10 @@ import Network from 'components/Network'
 import Platforms from 'components/Platforms'
 import Roadmap from 'components/Roadmap'
 import Team from 'components/Team'
+import Footer from 'components/Footer'
 
 export default function Index() {
   const matches = useMediaQuery('(min-device-width: 800px)')
-  console.log(matches)
   useEffect(() => {
     const effect = VANTA.NET({
       el: '#bg-element',
@@ -81,7 +81,8 @@ export default function Index() {
       <Platforms></Platforms>
       <Roadmap></Roadmap>
       <Team></Team>
-      {/* <ScrollToTop></ScrollToTop> */}
+      <Footer></Footer>
+
       <style jsx>{`
         #bg-element {
           width: 100%;

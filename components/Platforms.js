@@ -10,7 +10,7 @@ const platforms = [
 export default function Platforms() {
   return (
     <div className="relative bg-gray-300 py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-5xl">
         <p className="mt-2 max-w-2xl font-gilroy mx-auto font-extrabold text-secondary tracking-tight text-5xl">
           Station Finance is the 1inch of decentralized derivatives platforms.
         </p>
@@ -22,10 +22,10 @@ export default function Platforms() {
           <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {platforms.map((platform) => (
               <div key={platform.name} className=" ">
-                <div className="mx-auto flex flex-col justify-between py-16 bg-gray-50 rounded-lg px-6  md:w-80 md:h-80 w-72 h-72">
+                <div className="mx-auto flex flex-col justify-between py-16 bg-gray-50 rounded-lg  md:w-72 md:h-72 w-64 h-64">
                   <img
                     className="mx-auto pb-6"
-                    width="140"
+                    width="120"
                     alt={platform.name}
                     src={platform.image}
                   />

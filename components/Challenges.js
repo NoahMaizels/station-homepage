@@ -37,9 +37,9 @@ const challenges = [
 
 export default function Challenges() {
   return (
-    <div className="py-12 bg-secondary">
+    <div className="py-16 sm:py-24 lg:py-32 bg-secondary">
       <div className="md:max-w-xl max-w-sm mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
-        <h2 className="font-gilroy my-14 mx-auto font-bold text-center text-5xl text-gray-200">
+        <h2 className="font-gilroy mb-14 mx-auto font-extrabold text-center text-5xl text-gray-200">
           Industry Challenges
         </h2>
 
