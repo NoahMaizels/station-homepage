@@ -66,7 +66,7 @@ export default function Roadmap() {
   return (
     <div id="roadmap" className="bg-light pt-24 pb-36 sm:px-10 px-4">
       <div className="mx-auto max-w-5xl">
-        <h1 className="sm:text-left text-center pb-5 text-gray-200 text-6xl font-gilroy font-extrabold">
+        <h1 className="sm:text-left text-center pb-5 text-gray-200 text-5xl font-gilroy font-extrabold">
           Roadmap
         </h1>
       </div>

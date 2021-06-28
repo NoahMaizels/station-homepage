@@ -39,7 +39,7 @@ export default function Solutions() {
   return (
     <div className="py-12 bg-secondary">
       <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="font-gilroy my-14 mx-auto font-bold text-center text-4xl text-gray-200">
+        <h2 className="font-gilroy my-14 mx-auto font-bold text-center text-5xl text-gray-200">
           Our Solutions
         </h2>
 
