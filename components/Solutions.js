@@ -49,15 +49,17 @@ export default function Solutions() {
               <dt>
                 <p className="mt-5 text-xs leading-6 font-thin tracking-wider font-gilroy text-primary">{`SOLUTION ${solution.num}`}</p>
               </dt>
-              <dt className="flex flex-col  h-16 justify-center">
-                <p className="mt-3 text-2xl leading-6 w-56 font-medium text-lightPurple">
+              <dt className="flex flex-col  h-16 justify-start">
+                <p className="mt-3 text-2xl leading-6 w-56 font-medium font-gilroy text-lightPurple">
                   {solution.name}
                 </p>
               </dt>
-              <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-5 rounded-md">
+              <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-0 rounded-md">
                 <Image src={solution.image} />
               </div>
-              <dd className="mt-2 text-base text-gray-200">{solution.description}</dd>
+              <dd className="mt-2 text-base font-open-sans text-gray-200">
+                {solution.description}
+              </dd>
             </div>
           ))}
         </dl>

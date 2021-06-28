@@ -34,7 +34,7 @@ export default function Thorchain() {
                         <div className="mx-auto w-36 pt-10 pb-5">
                           <Image src={item.image} />
                         </div>
-                        <p className="px-2 lg:px-10 sm:pb-14 pb-6">{item.text}</p>
+                        <p className="px-2 lg:px-10 sm:pb-14 font-open-sans pb-6">{item.text}</p>
                       </div>
                     </div>
                   </div>

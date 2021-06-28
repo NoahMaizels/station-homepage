@@ -47,7 +47,7 @@ export default function Network() {
                 <h2 className="text-5xl font-extrabold font-gilroy tracking-tight text-secondary">
                   Balancer V2 liquidity
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
+                <p className="mt-4 text-md font-open-sans text-gray-500">
                   Our Balancer V2 framework ensures that our Ethereum users can access the full
                   functionality of cross-asset and cross-chain purchasing. As an official Balancer
                   V2 launch partner, Station developers were given early access to their
