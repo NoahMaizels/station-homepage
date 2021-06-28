@@ -53,14 +53,14 @@ const people = [
 export default function Example() {
   return (
     <div className="bg-dark">
-      <div className="mx-auto py-12   md:px-10 sm:px-40 px-5 lg:px-16 max-w-7xl   lg:py-24">
+      <div className="mx-auto py-12   md:px-10 px-5 lg:px-16 max-w-7xl   lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-5xl text-center font-extrabold text-white tracking-tight   pb-16">
               Meet the Team
             </h2>
           </div>
-          <ul className="space-y-12 sm:grid md:grid-cols-2 max-w-5xl mx-auto sm:space-y-0 lg:grid-cols-3 gap-y-12">
+          <ul className="space-y-12 sm:grid md:grid-cols-2 lg:max-w-5xl md:max-w-3xl  mx-auto sm:space-y-0 lg:grid-cols-3 gap-y-12">
             {people.map((person) => (
               <div className="px-5 max-w-sm mx-auto" key={person.name}>
                 <li className="py-10 px-10 h-full team-gradient text-center rounded-lg xl:text-left">
