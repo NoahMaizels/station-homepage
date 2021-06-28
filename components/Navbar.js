@@ -8,9 +8,9 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
   { name: 'Overview', href: '#overview' },
   { name: 'How It Works', href: '#howitworks' },
-  { name: 'Roadmap', href: '/#roadmap' },
+  { name: 'Roadmap', href: '#roadmap' },
   { name: 'Team', href: '#team' },
-  { name: 'Community', href: '#' }
+  { name: 'Community', href: '#footer' }
 ]
 
 export default function Navbar() {

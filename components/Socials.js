@@ -5,6 +5,8 @@ const Medium = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
       href="#"
+      target="_blank"
+      rel="noreferrer"
       id="medium">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
         <defs />
@@ -28,7 +30,9 @@ const Telegram = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       className="navIcon"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      href="#"
+      href="https://t.me/StationFinance"
+      target="_blank"
+      rel="noreferrer"
       id="telegram">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
         <defs />
@@ -53,6 +57,8 @@ const Telegramann = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
       href="#"
+      target="_blank"
+      rel="noreferrer"
       id="telegramann">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.17 43.171">
         <defs />
@@ -80,7 +86,9 @@ const Twitter = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       className="navIcon"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      href="#"
+      href="https://twitter.com/StationFinance"
+      target="_blank"
+      rel="noreferrer"
       id="twitter">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
         <defs />
@@ -104,7 +112,9 @@ const TelegramDark = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       className="navIcon"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      href="#"
+      href="https://t.me/StationFinance"
+      target="_blank"
+      rel="noreferrer"
       id="telegramDark">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
         <defs />
@@ -129,6 +139,8 @@ const TelegramannDark = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
       href="#"
+      target="_blank"
+      rel="noreferrer"
       id="telegramannDark">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.17 43.171">
         <defs />
@@ -156,7 +168,9 @@ const TwitterDark = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       className="navIcon"
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      href="#"
+      href="https://twitter.com/StationFinance"
+      target="_blank"
+      rel="noreferrer"
       id="twitterDark">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
         <defs />

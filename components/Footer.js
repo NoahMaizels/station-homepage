@@ -26,7 +26,7 @@ export default function Train() {
     }
   }
   return (
-    <div className="bg-laptop bg-cover bg-auto bg-left-top bg-no-repeat pt-10 pb-5">
+    <div id="footer" className="bg-laptop bg-cover bg-auto bg-left-top bg-no-repeat pt-10 pb-5">
       <div className="flex flex-col-reverse mx-auto lg:max-w-4xl lg:grid lg:grid-cols-3 lg:py-32 py-28 px-10 lg:items-start items-start">
         <div className="">
           <p className="font-gilroy w-64 font-semibold text-lg text-gray-200 pb-4 lg:pb-3">
