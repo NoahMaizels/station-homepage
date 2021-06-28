@@ -46,9 +46,6 @@ const Q4 = () => (
     <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
       Cross-chain purchases enabled for testnet SubStations.
     </li>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
-      Station V2 native chain Testnet
-    </li>
   </>
 )
 
