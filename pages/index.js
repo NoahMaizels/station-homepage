@@ -1,6 +1,4 @@
 /* eslint no-undef: 0*/
-import { useMediaQuery } from '@react-hook/media-query'
-
 import logoOnly from 'public/logoOnly.png'
 import { useEffect } from 'react'
 
