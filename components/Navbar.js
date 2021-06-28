@@ -63,7 +63,7 @@ export default function Navbar() {
           <>
             <div
               id="main-nav"
-              className="blur-half transition-top duration-500 fixed top-0 left-0 w-full z-10">
+              className="blur transition-top duration-500 fixed top-0 left-0 w-full z-10">
               <div className="z-50 flex justify-between items-center px-4 py-6 sm:px-6   md:space-x-10">
                 <div className="flex justify-start ">
                   <a href="/">
