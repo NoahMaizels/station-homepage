@@ -30,7 +30,7 @@ export default function Index() {
       backgroundColor: '#474782',
       points: 12,
       maxDistance: 24,
-      spacing: 40,
+      spacing: 30,
       scale: 1,
       scaleMobile: 1
     })
