@@ -27,7 +27,7 @@ export default function Index() {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      showDots: false,
+      showDots: true,
       color: '#0af584',
       backgroundColor: '#474782',
       points: 12,

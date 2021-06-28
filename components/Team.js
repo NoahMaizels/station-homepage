@@ -79,7 +79,7 @@ export default function Example() {
                       </p>
                     </div>
 
-                    <p className="text-gray-200 text-sm text-center">{person.bio}</p>
+                    <p className="text-gray-100 text-med font-bold text-center">{person.bio}</p>
                   </div>
                 </li>
               </div>

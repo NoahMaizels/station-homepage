@@ -5,6 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontWeight: ['hover', 'focus'],
+      fontSize: {
+        'med': '.95rem',
+      },
       fontFamily: {
         gilroy: ['gilroy', 'Arial', 'ui-sans-serif', 'system-ui'],
         'open-sans': ['Open Sans', 'Arial', 'ui-sans-serif', 'system-ui']
@@ -32,9 +35,9 @@ module.exports = {
       }),
       gradientColorStops: theme => ({
         ...theme('colors'),
-        dGreen: '#00aa93',
-        lGreen: '#00fb99',
-        mGreen: '#00d495'
+        dGreen: '#00b5bf',
+        lGreen: '#00b5bf',
+        mGreen: '#00cd9c',
        }),
       gridTemplateColumns: {
         'sm-330': 'repeat(1, minmax(0, 330px))',

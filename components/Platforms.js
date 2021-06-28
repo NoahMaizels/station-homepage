@@ -14,7 +14,7 @@ export default function Platforms() {
         <p className="mt-2 max-w-2xl font-gilroy mx-auto font-extrabold text-gray-50 tracking-tight text-5xl">
           Station Finance is the 1inch of decentralized derivatives platforms.
         </p>
-        <p className="mt-5 font-open-sans text-md max-w-prose mx-auto font-bold text-gray-50">
+        <p className="mt-5 font-open-sans text-lg max-w-prose mx-auto font-bold text-white">
           We ensure best pricing for decentralized derivatives from a variety of DeFi options
           platforms.
         </p>
@@ -36,7 +36,7 @@ export default function Platforms() {
               </div>
             ))}
           </div>
-          <p className="mt-20 italic max-w-prose mx-auto text-md font-bold text-gray-50">
+          <p className="mt-20 font-open-sans text-lg max-w-prose mx-auto font-bold text-white">
             With further integrations in the pipeline.
           </p>
         </div>
