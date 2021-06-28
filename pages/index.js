@@ -20,7 +20,7 @@ import Roadmap from 'components/Roadmap'
 import Team from 'components/Team'
 
 export default function Index() {
-  const matches = useMediaQuery('(max-width: 500px)')
+  const matches = useMediaQuery('min-width: 500px')
 
   useEffect(() => {
     const effect = VANTA.NET({
@@ -33,7 +33,7 @@ export default function Index() {
       backgroundColor: '#474782',
       points: 12,
       maxDistance: 24,
-      spacing: matches ? 40 : 20,
+      spacing: 20,
       scale: 1,
       scaleMobile: 1
     })
