@@ -30,6 +30,12 @@ module.exports = {
         dark: '#333266',
         light: '#504796ff'
       }),
+      gradientColorStops: theme => ({
+        ...theme('colors'),
+        dGreen: '#00aa93',
+        lGreen: '#00fb99',
+        mGreen: '#00d495'
+       }),
       gridTemplateColumns: {
         'sm-330': 'repeat(1, minmax(0, 330px))',
         'md-330': 'repeat(2, minmax(0, 330px))',
