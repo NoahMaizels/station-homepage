@@ -1,4 +1,5 @@
 /* eslint no-undef: 0*/
+import { useMediaQuery } from '@react-hook/media-query'
 
 import logoOnly from 'public/logoOnly.png'
 import { useEffect } from 'react'
@@ -19,6 +20,8 @@ import Roadmap from 'components/Roadmap'
 import Team from 'components/Team'
 
 export default function Index() {
+  const matches = useMediaQuery('(min-width: 400px)')
+
   useEffect(() => {
     const effect = VANTA.NET({
       el: '#bg-element',
@@ -30,7 +33,7 @@ export default function Index() {
       backgroundColor: '#474782',
       points: 12,
       maxDistance: 24,
-      spacing: 30,
+      spacing: matches ? 20 : 30,
       scale: 1,
       scaleMobile: 1
     })
@@ -83,7 +86,6 @@ export default function Index() {
       <style jsx>{`
         #bg-element {
           width: 100%;
-          background-size: 360px auto;
         }
         .main {
           flex: 1;
