@@ -52,7 +52,7 @@ const people = [
 
 export default function Example() {
   return (
-    <div className="bg-dark">
+    <div id="team" className="bg-dark">
       <div className="mx-auto py-12   md:px-10 px-5 lg:px-16 max-w-7xl   lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4">

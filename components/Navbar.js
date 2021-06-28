@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Overview', href: '#overview' },
   { name: 'How It Works', href: '#howitworks' },
   { name: 'Roadmap', href: '/#roadmap' },
-  { name: 'Team', href: '#' },
+  { name: 'Team', href: '#team' },
   { name: 'Community', href: '#' }
 ]
 
