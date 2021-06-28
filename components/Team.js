@@ -4,8 +4,7 @@ const people = [
     name: 'James Rozelle',
     role: 'CEO',
     bio: 'Over a decade of experience in software architecture design and six years of blockchain development. James is a natural leader who spearheads the Station initiative.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: 'james.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -13,8 +12,7 @@ const people = [
     name: 'Camie Garibaldi',
     role: 'Brand Manager',
     bio: 'Camie brings five years of graphic design and two years of media marketing and streaming experience. She excels in audience engagement and breathing life into ideas.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: 'camie.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -22,8 +20,7 @@ const people = [
     name: 'Alexander Rojas',
     role: 'Lead Developer',
     bio: 'Five years experience in systems languages specializing in automation and AI development in game theory. Four years experience developing Solidity smart contracts.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: 'alex.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -31,25 +28,23 @@ const people = [
     name: 'Noah Maizels',
     role: 'Product Advisor',
     bio: 'Marketing and PR professional with years of industry experience specializing in crypto and technical marketing. Ex-Wanchain, currently consulting at Fomocraft. Skilled front-end developer.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: 'noah.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
   {
     name: 'Joe Wong',
     role: 'Marketing Advisor',
-    bio: 'Principal at Fomocraft. 20+',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio: 'Principal at Fomocraft. 20+ years of integrated marketing experience at multiple award-winning global agencies. Launch CMO for MANTRA DAO and Polkastarter. Advisor for MANTRA DAO, Royale, Launchpool and Finxflo.',
+    imageUrl: 'joe.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
   {
     name: 'Nicholas Krapels',
     role: 'Strategy Advisor',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    bio: 'Principal of Fomocraft Ventures. Advisor to FinNexus, MANTRA DAO, Royale, Launchpool and Finxflo. Ex-Wanchain. Writer, educator, startup strategy and token economy expert.',
+    imageUrl: 'nick.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   }
@@ -58,66 +53,33 @@ const people = [
 export default function Example() {
   return (
     <div className="bg-dark">
-      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto py-12   md:px-10 sm:px-40 px-5 lg:px-16 max-w-7xl   lg:py-24">
         <div className="space-y-12">
-          <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-              Meet our team
+          <div className="space-y-5 sm:space-y-4">
+            <h2 className="text-5xl text-center font-extrabold text-white tracking-tight   pb-16">
+              Meet the Team
             </h2>
-            <p className="text-xl text-gray-300">
-              Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet lectus sit pretium
-              egestas vel mattis neque.
-            </p>
           </div>
-          <ul className="space-y-4 sm:grid sm:grid-cols-2 max-w-5xl mx-auto sm:space-y-0 lg:grid-cols-3 gap-y-10">
+          <ul className="space-y-12 sm:grid md:grid-cols-2 max-w-5xl mx-auto sm:space-y-0 lg:grid-cols-3 gap-y-12">
             {people.map((person) => (
-              <div className="px-5" key={person.name}>
-                <li className="py-10 px-20 team-gradient text-center rounded-lg xl:px-10 xl:text-left">
-                  <div className="space-y-6 xl:space-y-10">
+              <div className="px-5 max-w-sm mx-auto" key={person.name}>
+                <li className="py-10 px-10 h-full team-gradient text-center rounded-lg xl:text-left">
+                  <div className="space-y-2 xl:space-y-4">
                     <img
-                      className="mx-auto h-30 w-30 rounded-full xl:w-40 xl:h-40"
+                      className="mx-auto h-40 border-4 border-gray-50 w-40 rounded-full"
                       src={person.imageUrl}
                       alt=""
                     />
-                    <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
-                      <div className="font-medium text-lg leading-6 space-y-1">
-                        <h3 className="text-white">{person.name}</h3>
-                        <p className="text-indigo-400">{person.role}</p>
-                      </div>
-
-                      <ul className="flex justify-center space-x-5">
-                        <li>
-                          <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-300">
-                            <span className="sr-only">Twitter</span>
-                            <svg
-                              className="w-5 h-5"
-                              aria-hidden="true"
-                              fill="currentColor"
-                              viewBox="0 0 20 20">
-                              <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={person.linkedinUrl}
-                            className="text-gray-400 hover:text-gray-300">
-                            <span className="sr-only">LinkedIn</span>
-                            <svg
-                              className="w-5 h-5"
-                              aria-hidden="true"
-                              fill="currentColor"
-                              viewBox="0 0 20 20">
-                              <path
-                                fillRule="evenodd"
-                                d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </a>
-                        </li>
-                      </ul>
+                    <div className="font-medium text-lg leading-6 space-y-1">
+                      <h3 className="text-center text-secondary text-2xl font-gilroy font-extrabold">
+                        {person.name}
+                      </h3>
+                      <p className="text-center text-secondary font-gilroy font-thin text-2xl">
+                        {person.role}
+                      </p>
                     </div>
+
+                    <p className="text-gray-200 text-sm text-center">{person.bio}</p>
                   </div>
                 </li>
               </div>

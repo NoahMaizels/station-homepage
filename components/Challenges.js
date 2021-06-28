@@ -57,9 +57,7 @@ export default function Challenges() {
               <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-5 rounded-md">
                 <Image src={challenge.image} />
               </div>
-              <dd className="mt-2 text-base font-open-sans text-gray-200">
-                {challenge.description}
-              </dd>
+              <dd className="mt-2 text-sm font-open-sans text-gray-200">{challenge.description}</dd>
             </div>
           ))}
         </dl>

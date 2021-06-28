@@ -147,7 +147,7 @@ export default function Roadmap() {
                 <ul className="list-disc pl-10 pr-8 pb-16 pt-3 h-full">
                   {month.items.map((month_item) => (
                     <li
-                      className="text-left text-gray-200 pb-5 text-md font-open-sans"
+                      className="text-left text-gray-200 pb-5 text-sm font-open-sans"
                       key={month_item}>
                       {month_item}
                     </li>

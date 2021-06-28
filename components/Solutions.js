@@ -57,9 +57,7 @@ export default function Solutions() {
               <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-0 rounded-md">
                 <Image src={solution.image} />
               </div>
-              <dd className="mt-2 text-base font-open-sans text-gray-200">
-                {solution.description}
-              </dd>
+              <dd className="mt-2 text-sm font-open-sans text-gray-200">{solution.description}</dd>
             </div>
           ))}
         </dl>
