@@ -21,6 +21,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:creator" content="@StationFinance" />
         <meta name="twitter:image" content="https://i.imgur.com/AIIMCob.jpeg" />
         <meta name="twitter:description" content="Station Finance Homepage" />
+        <meta name="twitter:title" content="Station Finance Homepage" />
+        
       </Head>
 
       <Component {...pageProps} />
