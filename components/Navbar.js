@@ -200,9 +200,9 @@ export default function Navbar() {
       </button>
       <style jsx>{`
         #myBtn {
-          -webkit-touch-callout: none !important;
           outline-width: 0;
           outline: none;
+          -webkit-touch-callout: none !important;
           -webkit-user-select: none !important;
           -khtml-user-select: none !important;
           -moz-user-select: none !important;

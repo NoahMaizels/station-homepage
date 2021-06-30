@@ -38,26 +38,29 @@ const challenges = [
 export default function Challenges() {
   return (
     <div className="py-16 sm:py-24 lg:py-32 bg-secondary">
-      <div className="md:max-w-xl max-w-sm mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
+      <div className="md:max-w-md max-w-xs mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
         <h2 className="font-gilroy mb-14 mx-auto font-extrabold text-center text-5xl text-gray-200">
           Industry Challenges
         </h2>
 
         <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">
           {challenges.map((challenge) => (
-            <div className="" key={challenge.name}>
+            <div className="mx-auto text-center lg:text-left" key={challenge.name}>
               <dt>
                 <p className="mt-5 text-xs leading-6 font-thin tracking-wider font-gilroy text-primary">{`CHALLENGE ${challenge.num}`}</p>
               </dt>
-              <dt className="flex flex-col  h-16 justify-start">
-                <p className="mt-3 text-2xl leading-6 w-72 font-gilroy font-medium text-lightPurple">
+              <dt className="lg:h-20 mb-2 lg:pb-0 pb-3 justify-start">
+                <p className="mt-3 text-2xl mx-auto text-center lg:text-left leading-6 font-gilroy font-extrabold text-lightPurple">
                   {challenge.name}
                 </p>
               </dt>
-              <div className="flex items-center pb-8 pt-14 justify-center h-20 w-20 mb-6  mt-5 rounded-md">
+              {/* flex lg:text-left mx-auto text-center  pb-8 lg:pt-14 pt-0 h-20 w-20 lg:mb-6 mb-0  lg:mt-5 mt-0 rounded-md */}
+              <div className="inline-block lg:mr-auto lg:ml-0  mx-auto h-20 w-20  lg:mb-0 mb-3  rounded-md">
                 <Image src={challenge.image} />
               </div>
-              <dd className="mt-2 text-sm font-open-sans text-gray-200">{challenge.description}</dd>
+              <dd className="lg:mt-2 lg:text-left text-sm font-open-sans text-gray-200">
+                {challenge.description}
+              </dd>
             </div>
           ))}
         </dl>

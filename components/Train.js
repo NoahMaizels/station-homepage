@@ -6,9 +6,9 @@ export default function Train() {
           Cross-chain DeFi Derivatives Aggregator
         </div>
         <div className="lg:max-w-sm max-w-md lg:pl-20  text-2xl text-gray-200 font-gilroy pt-20">
-          <p>One stop solution</p>
+          <p>One stop solution,</p>
           <p>
-            One stop <span className="font-bold">station</span>
+            One stop <span className="font-bold">station.</span>
           </p>
         </div>
       </div>

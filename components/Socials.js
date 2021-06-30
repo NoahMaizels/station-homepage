@@ -116,7 +116,7 @@ const TelegramDark = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       target="_blank"
       rel="noreferrer"
       id="telegramDark">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 43.171 43.171">
         <defs />
         <path
           className="transition-colors"
@@ -142,7 +142,7 @@ const TelegramannDark = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       target="_blank"
       rel="noreferrer"
       id="telegramannDark">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.17 43.171">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 43.17 43.171">
         <defs />
         <path
           className="transition-colors"
@@ -172,7 +172,7 @@ const TwitterDark = ({ hoverState, handleMouseOver, handleMouseLeave }) => {
       target="_blank"
       rel="noreferrer"
       id="twitterDark">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 43.171 43.171">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 43.171 43.171">
         <defs />
         <path
           className="transition-colors"

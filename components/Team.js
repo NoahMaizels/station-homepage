@@ -64,14 +64,18 @@ export default function Example() {
       <div className="mx-auto py-24   md:px-10 px-5 lg:px-16 max-w-7xl">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-5xl text-center font-extrabold text-white tracking-tight   pb-16">
+            <h2 className="text-5xl text-center font-gilroy font-extrabold text-white tracking-tight   pb-16">
               Meet the Team
             </h2>
           </div>
-          <ul className="space-y-12 sm:grid md:grid-cols-2 lg:max-w-5xl md:max-w-3xl  mx-auto sm:space-y-0 lg:grid-cols-3 gap-y-12">
+          <ul className="space-y-12 sm:grid justify-center align-center items-center md:grid-cols-4 lg:max-w-5xl md:max-w-3xl  mx-auto sm:space-y-0 lg:grid-cols-6 gap-y-12">
             {people.map((person) => (
-              <div className="px-5 max-w-sm mx-auto" key={person.name}>
-                <li className="py-10 px-10 h-full team-gradient text-center rounded-lg xl:text-left">
+              <div
+                className={`${
+                  person.name === 'Nicholas Krapels' ? 'col-start-3 col-end-5' : ''
+                } px-5 col-span-2 self-center justify-self-center max-w-sm h-full mx-auto`}
+                key={person.name}>
+                <li className="py-10 px-6 h-full team-gradient text-center min-h-96 rounded-lg xl:text-left">
                   <div className="space-y-2 xl:space-y-4">
                     <img
                       className="mx-auto h-40 border-4 border-gray-50 w-40 rounded-full"
@@ -87,7 +91,7 @@ export default function Example() {
                       </p>
                     </div>
 
-                    <p className="text-gray-100 text-med font-bold text-center">{person.bio}</p>
+                    <p className="text-gray-100 text-sm text-center">{person.bio}</p>
                   </div>
                 </li>
               </div>
