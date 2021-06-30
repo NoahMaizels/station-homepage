@@ -18,9 +18,15 @@ function MyApp({ Component, pageProps }) {
           href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
           rel="stylesheet"></link>
         <meta property="og:url" content="https://station-homepage.vercel.app/" />
+        <meta name="og:image" content="https://i.imgur.com/ci40UZl.jpeg" />
+        <meta
+          property="og:description"
+          content="Home of Station Finance - The decentralized derivatives aggregator."
+        />
+        <meta name="og:title" content="Station Finance Homepage" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@StationFinance" />
-        <meta name="twitter:image" content="https://i.imgur.com/AIIMCob.jpeg" />
+        <meta name="twitter:image" content="https://i.imgur.com/ci40UZl.jpeg" />
         <meta
           name="twitter:description"
           content="Home of Station Finance - The decentralized derivatives aggregator."
