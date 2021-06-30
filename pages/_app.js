@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
           content="Home of Station Finance - The decentralized derivatives aggregator."
         />
         <meta name="og:title" content="Station Finance Homepage" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@StationFinance" />
         <meta name="twitter:image" content="https://i.imgur.com/ci40UZl.jpeg" />
         <meta
