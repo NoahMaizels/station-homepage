@@ -2,7 +2,7 @@ const quarters = ['Q3', 'Q4', 'Q1']
 
 const Q1 = () => (
   <>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">
       Integrate SubStations onto the mainnets of:
     </li>
     <ul>
@@ -11,27 +11,27 @@ const Q1 = () => (
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Polygon</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Polygon</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Polkadot</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Polkadot</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Solana</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Solana</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-6 pl-5 text-base font-open-sans">Terra</li>
+      <li className="text-gray-200 pb-6 pl-5 text-sm font-open-sans">Terra</li>
     </ul>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">
       Debut multi-chain front-end for Station V2.
     </li>
   </>
@@ -39,11 +39,11 @@ const Q1 = () => (
 
 const Q4 = () => (
   <>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">BSC integration.</li>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">BSC integration.</li>
+    <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">
       Testnet SubStations on Polygon, Polkadot, Solana, Terra.
     </li>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">
       Cross-chain purchases enabled for testnet SubStations.
     </li>
   </>
@@ -51,7 +51,7 @@ const Q4 = () => (
 
 const Q3 = () => (
   <>
-    <li className="text-left text-gray-200 pb-2 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">
       Station V1 single-chain integrates Ethereum derivatives platforms including:
     </li>
     <ul>
@@ -60,42 +60,42 @@ const Q3 = () => (
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Premia</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Premia</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Hegic</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Hegic</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Opyn</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Opyn</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Auctus</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Auctus</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-1 pl-5 text-base font-open-sans">Hedget</li>
+      <li className="text-gray-200 pb-1 pl-5 text-sm font-open-sans">Hedget</li>
       <img
         className="absolute transform translate-x-1 translate-y-2"
         width={12}
         alt="check"
         src="checkmark.svg"></img>
-      <li className="text-gray-200 pb-6 pl-5 text-base font-open-sans">Opium</li>
+      <li className="text-gray-200 pb-6 pl-5 text-sm font-open-sans">Opium</li>
     </ul>
-    <li className="text-left text-gray-200 pb-5 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-5 text-sm font-open-sans">
       THORChain integration to enable Cross-Asset Purchases.
     </li>
-    <li className="text-left text-gray-200 pb-5 text-base font-open-sans">
+    <li className="text-left text-gray-200 pb-5 text-sm font-open-sans">
       Smart Order Routing via both Thorchain & Balancer v2.
     </li>
   </>
@@ -103,7 +103,7 @@ const Q3 = () => (
 
 export default function Roadmap() {
   return (
-    <div id="roadmap" className="bg-light py-16 sm:py-24 lg:py-32 pb-36 sm:px-10">
+    <div id="roadmap" className="bg-light py-16 pl-8 sm:pl-0 sm:py-24 lg:py-32 pb-36 px-0 sm:px-10">
       <div className="mx-auto max-w-5xl">
         <h1 className="md:text-left text-center pb-5 text-gray-200 text-5xl font-gilroy font-extrabold">
           Roadmap
@@ -130,10 +130,10 @@ export default function Roadmap() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 grid-rows-3 gap-y-0 md:gap-y-10 md:max-w-5xl max-w-lg pr-4 md:w-full w-96 mx-auto ">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 grid-rows-3 gap-y-0 md:gap-y-10 md:max-w-5xl sm:w-full max-w-lg mx-auto ">
           {quarters.map((quarter) => (
             <div
-              className={`roadmap-section border-l-8 md:border-l-0 border-white md:mx-auto ml-2 pl-8 h-full pb-10 max-w-md md:pr-8 md:ml-0 md:pl-0 md:pt-0 pt-10`}
+              className="roadmap-section border-l-8 md:border-l-0 border-white pr-6 mx-auto pl-8 h-full pb-10 max-w-md md:ml-0 md:pl-0 md:pt-0 pt-10"
               key={quarter}>
               <img
                 alt="line"
