@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         <link
           href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
           rel="stylesheet"></link>
+        <meta property="og:url" content="https://station-homepage.vercel.app/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@StationFinance" />
         <meta name="twitter:image" content="https://i.imgur.com/AIIMCob.jpeg" />
