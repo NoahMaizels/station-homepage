@@ -72,7 +72,7 @@ export default function Example() {
             {people.map((person) => (
               <div
                 className={`${
-                  person.name === 'Nicholas Krapels' ? 'col-start-3 col-end-5' : ''
+                  person.name === 'Nicholas Krapels' ? 'lg:col-start-3 lg:col-end-5 md:col-start-2 md:col-end-4' : ''
                 } px-5 col-span-2 self-center justify-self-center max-w-sm h-full mx-auto`}
                 key={person.name}>
                 <li className="py-10 px-6 h-full team-gradient text-center min-h-96 rounded-lg xl:text-left">
