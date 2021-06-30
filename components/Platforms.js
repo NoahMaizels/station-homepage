@@ -19,13 +19,13 @@ export default function Platforms() {
           platforms.
         </p>
         <div className="mt-12">
-          <div className="mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto sm:max-w-xl lg:max-w-4xl grid grid-cols-1  lg:gap-y-8 lg:gap-x-0 md:gap-y-6 gap-y-8  md:gap-x-0 sm:gap-x-0 sm:grid-cols-2 lg:grid-cols-3">
             {platforms.map((platform) => (
-              <div key={platform.name} className=" ">
-                <div className="mx-auto flex flex-col justify-between py-16 bg-gray-50 rounded-lg  md:w-72 md:h-72 w-64 h-64">
+              <div key={platform.name} className="">
+                <div className="mx-auto flex flex-col justify-between py-10 bg-gray-50 rounded-lg w-64 h-56">
                   <img
                     className="mx-auto pb-6"
-                    width="120"
+                    width="90"
                     alt={platform.name}
                     src={platform.image}
                   />
