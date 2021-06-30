@@ -20,7 +20,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@StationFinance" />
         <meta name="twitter:image" content="https://i.imgur.com/AIIMCob.jpeg" />
-        <meta name="twitter:description" content="Station Finance Homepage" />
+        <meta
+          name="twitter:description"
+          content="Home of Station Finance - The decentralized derivatives aggregator."
+        />
         <meta name="twitter:title" content="Station Finance Homepage" />
       </Head>
 
