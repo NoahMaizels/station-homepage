@@ -41,8 +41,8 @@ export default function Index() {
     }
   }, [])
   return (
-    <div className="bg-secondary">
-      <div className="z-50 blur absolute -top-96 h-96 w-full bg-secondary"></div>
+    <div className="bg-secondary ">
+      <div className="z-50 blur  absolute -top-96 h-96 w-full bg-secondary"></div>
       <Head>
         <title>Station</title>
         <script src="/scripts/three.min.js"></script>
@@ -53,7 +53,7 @@ export default function Index() {
       <Navbar></Navbar>
       <div id="bg-element">
         <div className="">
-          <div className="px-5 ">
+          <div className="px-5 pb-32">
             <div className="  w-56 pt-60 mx-auto">
               <Image src={logoOnly} />
             </div>
@@ -67,7 +67,7 @@ export default function Index() {
             <a href="#howitworks">
               <button
                 type="button"
-                className="transition-colors font-bold hover:bg-gray-200 mt-8 px-10 mb-32 block text-lg font-gilroy mx-auto items-center  py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                className="transition-colors font-bold hover:bg-gray-200 mt-8 px-10 block text-lg font-gilroy mx-auto items-center  py-1.5 border border-transparent  rounded shadow-sm text-secondary bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Discover Station
               </button>
             </a>
