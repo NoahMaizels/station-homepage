@@ -5,7 +5,9 @@ import balancer from 'public/balancer.jpg'
 
 export default function Network() {
   return (
-    <div id="howitworks" className="relative bg-gray-50 py-16 sm:py-24 lg:py-32 overflow-hidden ">
+    <div
+      id="howitworks"
+      className="relative bg-gray-50 py-16 sm:py-24 lg:py-32 overflow-hidden px-8">
       <div className="relative">
         <div className="mx-auto lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense mb-16 sm:mb-24 lg:mb-32">
           <div className="px-4">
