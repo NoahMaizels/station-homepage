@@ -12,7 +12,7 @@ const people = [
     name: 'Chase Jacobsen',
     role: 'CIO',
     bio: "With a decade of Enterprise IT management experience across multiple sectors, Chase brings strategic offerings to empower Station's technology.",
-    imageUrl: 'chase.png',
+    imageUrl: 'chase.jpg',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -61,45 +61,42 @@ const people = [
 export default function Example() {
   return (
     <div id="team" className="bg-dark">
-      <div className="mx-auto py-24   md:px-10 px-5 lg:px-16 max-w-7xl">
-        <div className="space-y-12">
-          <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-5xl text-center font-gilroy font-extrabold text-white tracking-tight   pb-16">
-              Meet the Team
-            </h2>
-          </div>
-          <ul className="space-y-12 sm:grid justify-center align-center items-center md:grid-cols-4 lg:max-w-5xl md:max-w-3xl  mx-auto sm:space-y-0 lg:grid-cols-6 gap-y-12">
-            {people.map((person) => (
-              <div
-                className={`${
-                  person.name === 'Nicholas Krapels'
-                    ? 'lg:col-start-3 lg:col-end-5 md:col-start-2 md:col-end-4'
-                    : ''
-                } px-5 col-span-2 self-center justify-self-center max-w-sm h-full mx-auto`}
-                key={person.name}>
-                <li className="py-10 px-6 h-full team-gradient text-center min-h-96 rounded-lg xl:text-left">
-                  <div className="space-y-2 xl:space-y-4">
-                    <img
-                      className="mx-auto h-40 border-4 border-gray-50 w-40 rounded-full"
-                      src={person.imageUrl}
-                      alt=""
-                    />
-                    <div className="font-medium text-lg leading-6 space-y-1">
-                      <h3 className="text-center text-secondary text-2xl font-gilroy font-extrabold">
-                        {person.name}
-                      </h3>
-                      <p className="text-center text-secondary font-gilroy font-thin text-2xl">
-                        {person.role}
-                      </p>
-                    </div>
+      <div className="mx-auto py-16 sm:py-24 lg:py-32">
+        <h2 className="text-5xl pb-16 sm:pb-24 lg:pb-32  text-center font-gilroy font-extrabold text-white tracking-tight">
+          Meet the Team
+        </h2>
 
-                    <p className="text-gray-100 text-med text-center">{person.bio}</p>
+        <ul className="grid grid-cols-1 sm:grid-cols-4 lg:max-w-5xl sm:max-w-2xl  mx-auto lg:grid-cols-6 sm:gap-y-16 gap-y-12 lg:gap-x-8">
+          {people.map((person) => (
+            <li
+              className={`${
+                person.name === 'Nicholas Krapels'
+                  ? 'lg:col-start-3 lg:col-end-5 sm:col-start-2 sm:col-end-4'
+                  : ''
+              } px-5 col-span-2 self-center justify-self-center w-72 sm:w-80 h-full mx-auto`}
+              key={person.name}>
+              <div className="lg:py-10 lg:px-6 sm:py-8 py-6 px-8 h-full  team-gradient text-center min-h-96 rounded-lg xl:text-left">
+                <div className="space-y-2 xl:space-y-4">
+                  <img
+                    className="mx-auto lg:h-40 lg:w-40 w-32 h-32 border-4 border-gray-50 rounded-full"
+                    src={person.imageUrl}
+                    alt=""
+                  />
+                  <div className="font-medium text-lg leading-6 space-y-1">
+                    <h3 className="text-center text-secondary text-2xl font-gilroy font-extrabold">
+                      {person.name}
+                    </h3>
+                    <p className="text-center text-secondary font-gilroy font-thin text-2xl">
+                      {person.role}
+                    </p>
                   </div>
-                </li>
+
+                  <p className="text-gray-100 text-med text-center">{person.bio}</p>
+                </div>
               </div>
-            ))}
-          </ul>
-        </div>
+            </li>
+          ))}
+        </ul>
       </div>
       <style jsx>{`
         .team-gradient {
