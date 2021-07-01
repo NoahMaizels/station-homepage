@@ -43,7 +43,7 @@ export default function Challenges() {
           Industry Challenges
         </h2>
 
-        <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">
+        <dl className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">
           {challenges.map((challenge) => (
             <div className="mx-auto text-center lg:text-left" key={challenge.name}>
               <dt>

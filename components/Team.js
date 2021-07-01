@@ -62,11 +62,11 @@ export default function Example() {
   return (
     <div id="team" className="bg-dark">
       <div className="mx-auto py-16 sm:py-24 lg:py-32">
-        <h2 className="text-5xl pb-16 sm:pb-24 lg:pb-32  text-center font-gilroy font-extrabold text-white tracking-tight">
+        <h2 className="px-8 text-5xl pb-16 sm:pb-24 lg:pb-32  text-center font-gilroy font-extrabold text-white tracking-tight">
           Meet the Team
         </h2>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-4 lg:max-w-5xl sm:max-w-2xl  mx-auto lg:grid-cols-6 sm:gap-y-16 gap-y-12 lg:gap-x-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-4 lg:max-w-5xl sm:max-w-2xl  mx-auto lg:grid-cols-6 sm:gap-y-16 gap-y-16 lg:gap-x-8">
           {people.map((person) => (
             <li
               className={`${
@@ -75,7 +75,7 @@ export default function Example() {
                   : ''
               } px-5 col-span-2 self-center justify-self-center w-72 sm:w-80 h-full mx-auto`}
               key={person.name}>
-              <div className="lg:py-10 lg:px-6 sm:py-8 py-6 px-8 h-full  team-gradient text-center min-h-96 rounded-lg xl:text-left">
+              <div className="lg:py-10 lg:px-6 sm:py-8 py-5 px-8 h-full  team-gradient text-center min-h-96 rounded-lg xl:text-left">
                 <div className="space-y-2 xl:space-y-4">
                   <img
                     className="mx-auto lg:h-40 lg:w-40 w-32 h-32 border-4 border-gray-50 rounded-full"

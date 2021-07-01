@@ -103,61 +103,68 @@ const Q3 = () => (
 
 export default function Roadmap() {
   return (
-    <div id="roadmap" className="bg-light py-16 pl-8   sm:py-24 lg:py-32 pb-36 px-0 sm:px-10">
-      <div className="mx-auto max-w-5xl">
-        <h1 className="md:text-left text-center pb-5 text-gray-200 text-5xl font-gilroy font-extrabold">
+    <div id="roadmap" className="py-16 sm:py-24 lg:py-32 bg-light">
+      <div className="max-w-4xl mx-auto bg-pyramid bg-right bg-top bg-contain bg-no-repeat">
+        {/* Horizontal heading */}
+        <h1 className=" md:pl-5 pl-0 max-w-4xl mx-auto md:text-left text-center text-gray-200 text-5xl font-gilroy font-extrabold">
           Roadmap
         </h1>
-      </div>
-      <div className="mx-auto max-w-5xl bg-pyramid bg-right bg-top bg-contain bg-no-repeat">
-        <div className="sm:h-72 h-64"></div>
-        <div className="md:h-36"></div>
-        {/* Horizontal heading */}
-        <div className="md:flex flex-row hidden mb-10 mx-auto">
-          {quarters.map((quarter) => (
-            <div key={quarter} className="mt-20 border-t-8 border-white h-2 w-full">
-              <img
-                alt="line"
-                className="absolute -translate-y-5 translate-x-0 transform"
-                width="50"
-                src="triangle.png"
-              />
-              <h2 className="absolute transform -translate-y-24 translate-x-0 text-primary font-gilroy text-5xl font-extrabold">
-                {quarter}
-                <span className="font-extralight">{quarter === 'Q1' ? ' 2022' : ''}</span>
-              </h2>
-            </div>
-          ))}
-        </div>
+        <div className="md:h-20"></div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 grid-rows-3 gap-y-0 md:gap-y-10 md:max-w-5xl sm:w-full max-w-lg mx-auto ">
-          {quarters.map((quarter) => (
-            <div
-              className="roadmap-section border-l-8 md:border-l-0 border-white pr-6 mx-auto pl-8 h-full pb-10 max-w-md md:ml-0 md:pl-0 md:pt-0 pt-10"
-              key={quarter}>
-              <img
-                alt="line"
-                className={`-translate-y-4 md:hidden -translate-x-14 -rotate-90 transform`}
-                width="50"
-                src="triangle.png"
-              />
-              <div className="flex h-full flex-col justify-start bg-dark rounded-lg pt-6  ">
-                <p
-                  className={`absolute transform md:-translate-y-6 md:-translate-x-32 -translate-y-20 translate-x-1 font-extrabold md:text-5xl text-4xl text-primary font-gilroy md:hidden`}>
+        <div className="md:h-80 sm:h-64 h-44"></div>
+        <div className="px-5">
+          <div className="md:flex max-w-4xl mx-auto  flex-row hidden mb-10 mx-auto">
+            {quarters.map((quarter) => (
+              <div key={quarter} className="px-4 mt-20 border-t-4 border-white h-2 w-full">
+                <img
+                  alt="line"
+                  className="absolute -translate-y-4 translate-x-0 transform"
+                  width="40"
+                  src="triangle.png"
+                />
+                <h2 className="absolute transform -translate-y-24 translate-x-0 text-primary font-gilroy text-5xl font-extrabold">
                   {quarter}
-                </p>
-                <p
-                  className={`${
-                    quarter !== 'Q1' ? 'hidden' : ''
-                  } absolute transform  md:-translate-x-40 -translate-y-20 translate-x-14 font-extralight md:text-5xl text-4xl  text-primary font-gilroy md:hidden`}>
-                  2022
-                </p>
-                <ul className="list-disc pl-10 pr-8 pb-16 pt-3 h-full">
-                  {quarter === 'Q3' ? Q3() : quarter === 'Q4' ? Q4() : quarter === 'Q1' ? Q1() : ''}
-                </ul>
+                  <span className="font-extralight">{quarter === 'Q1' ? ' 2022' : ''}</span>
+                </h2>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 gap-y-0 md:gap-y-10 md:max-w-4xl md:mx-auto max-w-sm mx-auto ">
+            {quarters.map((quarter) => (
+              <div
+                className="px-4 roadmap-section border-l-4 md:border-l-0 border-white ml-2 md:mx-auto h-full pb-12 max-w-sm md:pt-0 pt-16"
+                key={quarter}>
+                <img
+                  alt="line"
+                  className={`-translate-y-5 md:hidden -translate-x-10 -rotate-90 transform`}
+                  width="40"
+                  src="triangle.png"
+                />
+                <div className="pb-4 flex h-full flex-col justify-start bg-dark rounded-lg pt-6 ">
+                  <p
+                    className={`absolute transform md:-translate-y-6 md:-translate-x-32 -translate-y-20 translate-x-1 font-extrabold md:text-5xl text-4xl text-primary font-gilroy md:hidden`}>
+                    {quarter}
+                  </p>
+                  <p
+                    className={`${
+                      quarter !== 'Q1' ? 'hidden' : ''
+                    } absolute transform  md:-translate-x-40 -translate-y-20 translate-x-14 font-extralight md:text-5xl text-4xl  text-primary font-gilroy md:hidden`}>
+                    2022
+                  </p>
+                  <ul className="list-disc pl-10 pr-8 pb-0 pt-3 h-full">
+                    {quarter === 'Q3'
+                      ? Q3()
+                      : quarter === 'Q4'
+                      ? Q4()
+                      : quarter === 'Q1'
+                      ? Q1()
+                      : ''}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <style jsx>
