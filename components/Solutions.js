@@ -47,7 +47,7 @@ export default function Solutions() {
           {solutions.map((solution) => (
             <div className="mx-auto text-center lg:text-left" key={solution.name}>
               <dt>
-                <p className="mt-5 text-sm leading-6 font-bold tracking-wider font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
+                <p className="mt-5 text-sm leading-6 font-bold tracking-widest font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
               </dt>
               <dt className="lg:h-14 mb-2 lg:pb-0 pb-3 justify-start">
                 <p className="mt-3 text-2xl mx-auto text-center lg:text-left leading-6 font-gilroy font-extrabold text-lightPurple">
