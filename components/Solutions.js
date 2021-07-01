@@ -47,7 +47,7 @@ export default function Solutions() {
           {solutions.map((solution) => (
             <div className="mx-auto text-center lg:text-left" key={solution.name}>
               <dt>
-                <p className="mt-5 text-xs leading-6 font-thin tracking-wider font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
+                <p className="mt-5 text-sm leading-6 font-bold tracking-wider font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
               </dt>
               <dt className="lg:h-14 mb-2 lg:pb-0 pb-3 justify-start">
                 <p className="mt-3 text-2xl mx-auto text-center lg:text-left leading-6 font-gilroy font-extrabold text-lightPurple">
@@ -58,7 +58,7 @@ export default function Solutions() {
               <div className="inline-block lg:mr-auto lg:ml-0  mx-auto h-20 w-20  lg:mb-0 mb-3  rounded-md">
                 <Image src={solution.image} />
               </div>
-              <dd className="lg:mt-2 lg:text-left text-sm font-open-sans text-gray-200">
+              <dd className="lg:mt-2 lg:text-left text-med font-open-sans text-gray-50">
                 {solution.description}
               </dd>
             </div>

@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontWeight: ['hover', 'focus'],
       fontSize: {
-        'med': '.95rem',
+        'med': '.90rem',
       },
       fontFamily: {
         gilroy: ['gilroy', 'Arial', 'ui-sans-serif', 'system-ui'],
@@ -19,7 +19,7 @@ module.exports = {
         ...theme('colors'),
         primary: '#0af584',
         secondary: '#474782',
-        lightPurple: '#a597e5ff'
+        lightPurple: '#B0A1F4'
       }),
       backgroundImage: (theme) => ({
         train: "url('public/bg-train.jpg')",

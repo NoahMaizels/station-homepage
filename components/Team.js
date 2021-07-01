@@ -12,7 +12,7 @@ const people = [
     name: 'Chase Jacobsen',
     role: 'CIO',
     bio: "With a decade of Enterprise IT management experience across multiple sectors, Chase brings strategic offerings to empower Station's technology.",
-    imageUrl: 'chase.jpg',
+    imageUrl: 'chase.png',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -93,7 +93,7 @@ export default function Example() {
                       </p>
                     </div>
 
-                    <p className="text-gray-100 text-sm text-center">{person.bio}</p>
+                    <p className="text-gray-100 text-med text-center">{person.bio}</p>
                   </div>
                 </li>
               </div>

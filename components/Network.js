@@ -14,7 +14,7 @@ export default function Network() {
                 <h2 className="text-5xl font-extrabold font-gilroy text-secondary tracking-tight text-gray-900">
                   A Network of Substations
                 </h2>
-                <p className="mt-4 text-sm font-open-sans text-gray-500">
+                <p className="mt-4 text-base font-open-sans text-gray-700">
                   Users across networks interact via their chain’s SubStation. Asset swaps are
                   processed using THORChain cross-chain liquidity swaps. Station then sends
                   instructions to complete the transaction to the SubStation to the native chain for
@@ -47,7 +47,7 @@ export default function Network() {
                 <h2 className="text-5xl font-extrabold font-gilroy tracking-tight text-secondary">
                   Balancer V2 liquidity
                 </h2>
-                <p className="mt-4 text-sm font-open-sans text-gray-500">
+                <p className="mt-4 text-base font-open-sans text-gray-700">
                   Our Balancer V2 framework ensures that our Ethereum users can access the full
                   functionality of cross-asset and cross-chain purchasing. As an official Balancer
                   V2 launch partner, Station developers were given early access to their
