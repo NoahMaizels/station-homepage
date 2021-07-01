@@ -26,7 +26,7 @@ export default function Thorchain() {
         <div className="mt-12">
           <div className="mx-auto max-w-4xl grid grid-cols-1 gap-8 sm:grid-cols-2 ">
             {items.map((item) => (
-              <div key={item.name} className="pt-13">
+              <div key={item.name} className="h-full pt-13">
                 <div className="flow-root rounded-lg pb-8">
                   <div className="-mt-6">
                     <div>
@@ -34,7 +34,7 @@ export default function Thorchain() {
                         <div className="mx-auto w-36 pt-10 pb-5">
                           <Image src={item.image} />
                         </div>
-                        <p className="px-2 lg:px-10 sm:pb-14 text-base text-gray-500 font-open-sans pb-6">
+                        <p className="px-2 lg:px-10 sm:pb-14 text-sm text-gray-500 font-open-sans pb-6">
                           {item.text}
                         </p>
                       </div>
