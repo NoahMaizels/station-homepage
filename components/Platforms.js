@@ -25,7 +25,7 @@ export default function Platforms() {
                 <div className="mx-auto flex flex-col justify-between py-10 bg-gray-50 rounded-lg w-64 h-56">
                   <img
                     className="mx-auto pb-6"
-                    width={platform.name === "Auctus" || platform.name === "Hegic" ? "115" : "90"}
+                    width={platform.name === 'Auctus' || platform.name === 'Hegic' ? '115' : '90'}
                     alt={platform.name}
                     src={platform.image}
                   />
