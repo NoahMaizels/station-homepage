@@ -16,7 +16,7 @@ body {
 }
 
 .blur {
-  backdrop-filter: blur(0.75px);
+  backdrop-filter: blur(0.758px);
 }
 
 * {

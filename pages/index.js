@@ -41,8 +41,7 @@ export default function Index() {
     }
   }, [])
   return (
-    <div className="bg-secondary ">
-      <div className="z-50 blur  absolute -top-96 h-96 w-full bg-secondary"></div>
+    <div className="bg-secondary">
       <Head>
         <title>Station</title>
         <script src="/scripts/three.min.js"></script>
@@ -52,7 +51,7 @@ export default function Index() {
 
       <Navbar></Navbar>
       <div id="bg-element">
-        <div className="">
+        <div className="blur">
           <div className="px-5 pb-32">
             <div className="  w-56 pt-60 mx-auto">
               <Image src={logoOnly} />
