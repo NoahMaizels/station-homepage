@@ -40,7 +40,7 @@ export default function Solutions() {
     <div className="pb-16 sm:pb-24 lg:pb-32 bg-secondary">
       <div className="md:max-w-md max-w-xs mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
         <h2 className="font-gilroy mb-14 mx-auto font-extrabold text-center text-5xl text-gray-200">
-          Station's Solutions
+          Station&apos;s Solutions
         </h2>
 
         <dl className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">

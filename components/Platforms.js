@@ -9,9 +9,9 @@ const platforms = [
 
 export default function Platforms() {
   return (
-    <div className="relative bg-gray-300 py-16 sm:py-24 lg:py-32">
+    <div className="relative bg-gray-100 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <p className="max-w-2xl font-gilroy mx-auto font-extrabold text-secondary tracking-tight text-5xl">
+        <p className="max-w-4xl font-gilroy mx-auto font-extrabold text-secondary tracking-tight text-5xl">
           Station Finance is the 1inch of decentralized derivatives platforms.
         </p>
         <p className="mt-8  font-open-sans text-lg max-w-prose mx-auto font-bold text-gray-700">
@@ -25,7 +25,7 @@ export default function Platforms() {
                 <div className="mx-auto flex flex-col justify-between py-10 bg-gray-50 rounded-lg w-64 h-56">
                   <img
                     className="mx-auto pb-6"
-                    width="90"
+                    width={platform.name === "Auctus" || platform.name === "Hegic" ? "115" : "90"}
                     alt={platform.name}
                     src={platform.image}
                   />
@@ -41,6 +41,15 @@ export default function Platforms() {
           </p>
         </div>
       </div>
+      <style jsx>
+        {`
+           {
+            /* .bg-platforms {
+            background-color: #f2f2f2;
+          } */
+          }
+        `}
+      </style>
     </div>
   )
 }

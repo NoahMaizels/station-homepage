@@ -73,9 +73,9 @@ export default function Example() {
                 person.name === 'Nicholas Krapels'
                   ? 'lg:col-start-3 lg:col-end-5 sm:col-start-2 sm:col-end-4'
                   : ''
-              } px-5 col-span-2 self-center justify-self-center w-72 sm:w-80 h-full mx-auto`}
+              } px-5 col-span-2 self-center justify-self-center w-72 sm:w-80 mx-auto`}
               key={person.name}>
-              <div className="lg:py-10 lg:px-6 sm:py-8 py-5 px-8 h-full  team-gradient text-center min-h-96 rounded-lg xl:text-left">
+              <div className="lg:py-10 lg:px-6 sm:py-8 py-5 px-8 team-height pb-20 team-gradient text-center min-h-96 rounded-lg xl:text-left">
                 <div className="space-y-2 xl:space-y-4">
                   <img
                     className="mx-auto lg:h-40 lg:w-40 w-32 h-32 border-4 border-gray-50 rounded-full"
@@ -99,6 +99,9 @@ export default function Example() {
         </ul>
       </div>
       <style jsx>{`
+        .team-height {
+          height: 30rem;
+        }
         .team-gradient {
           background: rgb(64, 148, 214);
           background: linear-gradient(
