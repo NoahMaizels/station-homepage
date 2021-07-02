@@ -40,14 +40,14 @@ export default function Solutions() {
     <div className="pb-16 sm:pb-24 lg:pb-32 bg-secondary">
       <div className="md:max-w-md max-w-xs mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
         <h2 className="font-gilroy mb-14 mx-auto font-extrabold text-center text-5xl text-gray-200">
-          Industry Solutions
+          Station's Solutions
         </h2>
 
         <dl className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">
           {solutions.map((solution) => (
             <div className="mx-auto text-center lg:text-left" key={solution.name}>
               <dt>
-                <p className="mt-5 text-sm leading-6 font-bold tracking-widest font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
+                <p className="mt-5 text-xs leading-6 font-bold tracking-widest font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
               </dt>
               <dt className="lg:h-14 mb-2 lg:pb-0 pb-3 justify-start">
                 <p className="mt-3 text-2xl mx-auto text-center lg:text-left leading-6 font-gilroy font-extrabold text-lightPurple">
