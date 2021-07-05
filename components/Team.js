@@ -51,7 +51,7 @@ const people = [
   {
     name: 'Nicholas Krapels',
     role: 'Strategy Advisor',
-    bio: 'Principal of Fomocraft Ventures. Advisor to FinNexus, MANTRA DAO, Royale, Launchpool and Finxflo. Ex-Wanchain. Writer, educator, startup strategy and token economy expert.',
+    bio: 'Principal of Fomocraft Ventures. Advisor to MANTRA DAO, Royale, Launchpool and Finxflo. Ex-Wanchain. Writer, educator, startup strategy and token economy expert.',
     imageUrl: 'nick.png',
     twitterUrl: '#',
     linkedinUrl: '#'
