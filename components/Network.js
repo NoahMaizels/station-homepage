@@ -22,13 +22,13 @@ export default function Network() {
             </p>
           </div>
 
-          <div className="mt-12 sm:mt-16 lg:mt-0 lg:pl-10 col-span-2">
+          <div className="mt-12 sm:mt-16 lg:mt-0 px-6 lg:ml-6 col-span-2">
             <Image src={substation} />
           </div>
         </div>
 
-        <div className="mx-auto px-4 lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense flex flex-col-reverse">
-          <div className="mt-12 sm:mt-16 lg:mt-0 lg:pr-10 col-span-2 pr-5">
+        <div className="mx-auto lg:px-8 lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense flex flex-col-reverse">
+          <div className="mt-12 lg:mr-10 px-6 sm:mt-16 lg:mt-0  col-span-2">
             <Image src={balancer} />
           </div>
 

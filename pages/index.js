@@ -53,10 +53,10 @@ export default function Index() {
       <div id="bg-element">
         <div className="blur">
           <div className="px-5 pb-32">
-            <div className="sm:w-56 sm:pt-60  w-36 pt-44 mx-auto">
+            <div className="sm:w-40 sm:pt-40  w-36 pt-44 mx-auto">
               <Image src={logoOnly} />
             </div>
-            <h1 className="tracking-tight sm:mt-24 mt-10 px-10 sm:px-0 text-center sm:text-6xl text-5xl font-gilroy font-bold text-gray-200">
+            <h1 className="tracking-tight sm:mt-16 mt-10 px-10 sm:px-0 text-center sm:text-6xl text-5xl font-gilroy font-bold text-gray-200">
               Where Derivatives Live
             </h1>
             <h2 className="mt-4 text-center max-w-xl text-lg mx-auto font-open-sans text-gray-200">
