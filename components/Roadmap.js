@@ -103,7 +103,7 @@ const Q3 = () => (
 
 export default function Roadmap() {
   return (
-    <div id="roadmap" className="py-16 sm:py-24 lg:py-32 bg-light">
+    <div id="roadmap" className="py-16 sm:py-24 pl-4 lg:py-32 bg-light">
       <div className="max-w-4xl mx-auto bg-pyramid bg-right bg-top bg-contain bg-no-repeat">
         {/* Horizontal heading */}
         <h1 className=" md:pl-5 pl-0 max-w-4xl mx-auto md:text-left text-center text-gray-200 text-5xl font-gilroy font-extrabold">

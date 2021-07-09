@@ -12,7 +12,7 @@ export default function Network() {
         <div className="mx-auto lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense mb-16 sm:mb-24 lg:mb-32">
           <div className="px-4">
             <h2 className="text-5xl font-extrabold font-gilroy text-secondary tracking-tight text-gray-900">
-              A Network of Substations
+              A Network of SubStations
             </h2>
             <p className="mt-4 text-base font-open-sans text-gray-700">
               Users across networks interact via their chain’s SubStation. Asset swaps are processed
@@ -36,7 +36,7 @@ export default function Network() {
             <div>
               <div className="mt-6">
                 <h2 className="text-5xl font-extrabold font-gilroy tracking-tight text-secondary">
-                  Balancer V2 liquidity
+                  Balancer V2 Liquidity
                 </h2>
                 <p className="mt-4 text-base font-open-sans text-gray-700">
                   Our Balancer V2 framework ensures that our Ethereum users can access the full
