@@ -8,13 +8,6 @@ body {
 }
 
 
-@font-face {
-  font-family: 'gilroy';
-  src: url('public/fonts/gilroy/Gilroy-ExtraBold.otf');
-  font-weight: 800;
-  font-style: 'Extra Bold';
-}
-
 .blur {
   backdrop-filter: blur(0.758px);
 }
@@ -40,6 +33,14 @@ body {
 
 *:focus-visible {
   outline: none; 
+}
+
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('public/fonts/gilroy/Gilroy-ExtraBold.otf');
+  font-weight: 800;
+  font-style: 'Extra Bold';
 }
 
 @font-face {

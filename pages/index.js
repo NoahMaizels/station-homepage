@@ -22,7 +22,7 @@ import Footer from 'components/Footer'
 export default function Index() {
   const matches = useMediaQuery('(min-device-width: 800px)')
   useEffect(() => {
-    const effect = VANTA.NET({
+    VANTA.NET({
       el: '#bg-element',
       mouseControls: true,
       touchControls: true,
@@ -36,9 +36,6 @@ export default function Index() {
       scale: 1,
       scaleMobile: 1
     })
-    {
-      effect
-    }
   }, [])
   return (
     <div className="bg-secondary">
