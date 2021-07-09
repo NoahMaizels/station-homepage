@@ -38,6 +38,8 @@ function MyApp({ Component, pageProps }) {
           content="Home of Station Finance - The decentralized derivatives aggregator."
         />
         <meta name="twitter:title" content="Station Finance Homepage" />
+        <script src="/scripts/three.min.js"></script>
+        <script src="/scripts/net.min.js"></script>
       </Head>
       <Component {...pageProps} />
     </>

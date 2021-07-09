@@ -44,8 +44,6 @@ export default function Index() {
     <div className="bg-secondary">
       <Head>
         <title>Station</title>
-        <script src="/scripts/three.min.js"></script>
-        <script src="/scripts/net.min.js"></script>
       </Head>
       {/* This example requires Tailwind CSS v2.0+ */}
 
