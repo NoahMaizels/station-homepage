@@ -61,7 +61,7 @@ const people = [
     name: 'Jim Austin Joseph, Esq.',
     role: 'Advisor',
     bio: 'Licensed attorney. Crypto developer since 2014. Assisted ICO and STO token launches since 2017. Work featured in Techcrunch and CryptoCoinNews.',
-    imageUrl: 'Jim.webp',
+    imageUrl: 'jim.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   }
