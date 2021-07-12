@@ -38,19 +38,19 @@ const solutions = [
 export default function Solutions() {
   return (
     <div className="pb-16 sm:pb-24 lg:pb-32 bg-secondary">
-      <div className="md:max-w-md max-w-xs mx-auto px-6 sm:px-6 lg:max-w-5xl lg:px-8">
-        <h2 className="font-gilroy mb-14 mx-auto font-extrabold text-center text-5xl text-gray-200">
+      <div className="md:max-w-md max-w-xs mx-auto px-6 sm:px-6 lg:max-w-4xl lg:px-8">
+        <h2 className="font-gilroy mb-14 mx-auto font-extrabold text-center text-4xl text-gray-200">
           Station&apos;s Solutions
         </h2>
 
-        <dl className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">
+        <dl className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-6">
           {solutions.map((solution) => (
             <div className="mx-auto text-center lg:text-left" key={solution.name}>
               <dt>
                 <p className="mt-5 text-xs leading-6 font-bold tracking-widest font-gilroy text-primary">{`CHALLENGE ${solution.num}`}</p>
               </dt>
               <dt className="lg:h-14 mb-2 lg:pb-0 pb-3 justify-start">
-                <p className="mt-3 text-2xl mx-auto text-center lg:text-left leading-6 font-gilroy font-extrabold text-lightPurple">
+                <p className="mt-3 text-xl mx-auto text-center lg:text-left leading-6 font-gilroy font-extrabold text-lightPurple">
                   {solution.name}
                 </p>
               </dt>
@@ -58,7 +58,7 @@ export default function Solutions() {
               <div className="inline-block lg:mr-auto lg:ml-0  mx-auto h-20 w-20  lg:mb-0 mb-3  rounded-md">
                 <Image width={80} src={solution.image} />
               </div>
-              <dd className="lg:mt-2 lg:text-left text-med font-open-sans text-gray-50">
+              <dd className="lg:mt-2 lg:text-left text-sm font-open-sans text-gray-50">
                 {solution.description}
               </dd>
             </div>

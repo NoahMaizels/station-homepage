@@ -18,8 +18,8 @@ const items = [
 export default function Thorchain() {
   return (
     <div id="overview" className="relative bg-gray-200 py-16 sm:py-24 lg:py-32 px-5 ">
-      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <h2 className="tracking-tight mx-auto pb-10 text-center max-w-md text-5xl font-extrabold font-gilroy text-secondary">
+      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-4xl">
+        <h2 className="tracking-tight mx-auto pb-10 text-center max-w-md text-4xl font-extrabold font-gilroy text-secondary">
           THORChain&apos;s Cross‑chain Solution
         </h2>
 
@@ -34,7 +34,7 @@ export default function Thorchain() {
                         <div className="mx-auto w-36 pt-10 pb-5">
                           <Image width={144} height={144} src={item.image} />
                         </div>
-                        <p className="px-2 lg:px-10 sm:pb-14 text-sm text-gray-700 font-open-sans pb-6">
+                        <p className="px-2 lg:px-10 sm:pb-14 text-xs text-gray-700 font-open-sans pb-6">
                           {item.text}
                         </p>
                       </div>

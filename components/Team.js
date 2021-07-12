@@ -71,34 +71,34 @@ export default function Example() {
   return (
     <div id="team" className="bg-dark">
       <div className="mx-auto py-16 sm:py-24 lg:py-32">
-        <h2 className="px-8 text-5xl pb-16 sm:pb-24 lg:pb-32  text-center font-gilroy font-extrabold text-white tracking-tight">
+        <h2 className="px-8 text-4xl pb-16 sm:pb-24 lg:pb-32  text-center font-gilroy font-extrabold text-white tracking-tight">
           Meet the Team
         </h2>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-4 lg:max-w-5xl sm:max-w-2xl  mx-auto lg:grid-cols-6 sm:gap-y-16 gap-y-16 lg:gap-x-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-4 lg:max-w-3xl sm:max-w-xl max-w-xs  mx-auto lg:grid-cols-6 sm:gap-y-8 gap-y-10 lg:gap-x-0">
           {people.map((person) => (
             <li
               className={`${
                 person.name === 'Nicholas Krapels' ? 'lg:col-start-2 lg:col-end-4' : ''
-              } px-5 col-span-2 self-center justify-self-center w-72 sm:w-80 mx-auto`}
+              } px-4 col-span-2 self-center justify-self-center mx-auto`}
               key={person.name}>
-              <div className="lg:py-10 lg:px-6 sm:py-8 py-5 px-8 team-height pb-20 team-gradient text-center min-h-96 rounded-lg xl:text-left">
+              <div className="lg:px-6 px-8 pt-6 team-height team-gradient text-center rounded-lg xl:text-left">
                 <div className="space-y-2 xl:space-y-4">
                   <img
-                    className="mx-auto lg:h-40 lg:w-40 w-32 h-32 border-4 border-gray-50 rounded-full"
+                    className="mx-auto lg:h-26 lg:w-26 w-32 h-32 border-4 border-gray-50 rounded-full"
                     src={person.imageUrl}
                     alt=""
                   />
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <h3 className="text-center text-secondary text-2xl font-gilroy font-extrabold">
+                  <div className="font-medium text-base leading-6 space-y-1">
+                    <h3 className="text-center text-secondary text-xl font-gilroy font-extrabold">
                       {person.name}
                     </h3>
-                    <p className="text-center text-secondary font-gilroy font-thin text-2xl">
+                    <p className="text-center text-secondary font-gilroy font-thin text-xl">
                       {person.role}
                     </p>
                   </div>
 
-                  <p className="text-gray-100 text-med text-center">{person.bio}</p>
+                  <p className="text-gray-100 text-sm text-center">{person.bio}</p>
                 </div>
               </div>
             </li>
@@ -107,7 +107,7 @@ export default function Example() {
       </div>
       <style jsx>{`
         .team-height {
-          height: 30rem;
+          height: 29rem;
         }
         .team-gradient {
           background: rgb(64, 148, 214);

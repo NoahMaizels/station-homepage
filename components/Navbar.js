@@ -83,7 +83,7 @@ export default function Navbar() {
                     <a
                       key={link.name}
                       href={link.href}
-                      className="font-gilroy transition-colors hover:text-gray-200 text-primary  text-lg font-bold hover:text-gray-200">
+                      className="font-gilroy transition-colors hover:text-gray-200 text-primary  text-base font-bold hover:text-gray-200">
                       {link.name}
                     </a>
                   ))}

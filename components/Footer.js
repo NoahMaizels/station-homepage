@@ -29,7 +29,7 @@ export default function Train() {
     <div id="footer" className="bg-laptop bg-cover bg-auto bg-left-top bg-no-repeat pt-10 pb-5">
       <div className="flex flex-col-reverse mx-auto lg:max-w-4xl lg:grid lg:grid-cols-3 lg:py-32 py-28 px-10 lg:items-start items-start">
         <div className="">
-          <p className="font-gilroy w-64 font-semibold text-lg text-gray-200 pb-4 lg:pb-3">
+          <p className="font-gilroy w-64 font-semibold text-base text-gray-200 pb-4 lg:pb-3">
             If you have questions, please visit our telegram community.
           </p>
           <div className="flex flex-row gap-x-5">
@@ -44,7 +44,7 @@ export default function Train() {
           </div>
         </div>
         <div>
-          <p className="font-gilroy font-semibold text-lg text-gray-200 lg:pb-3 pb-4  w-48">
+          <p className="font-gilroy font-semibold text-base text-gray-200 lg:pb-3 pb-4  w-48">
             Or follow our updates on Twitter
           </p>
           <div className="pb-10">
@@ -55,7 +55,7 @@ export default function Train() {
           </div>
         </div>
 
-        <div className="lg:max-w-lg max-w-md sm:text-6xl text-5xl pb-10 font-gilroy font-bold text-gray-200">
+        <div className="lg:max-w-lg max-w-md sm:text-5xl text-4xl pb-10 font-gilroy font-bold text-gray-200">
           Join Our Community
         </div>
       </div>

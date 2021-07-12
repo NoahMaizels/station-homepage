@@ -12,11 +12,11 @@ const platforms = [
 export default function Platforms() {
   return (
     <div className="relative bg-platforms py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        <p className="max-w-4xl font-gilroy mx-auto font-extrabold text-secondary tracking-tight text-5xl">
+      <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-4xl">
+        <p className="max-w-4xl font-gilroy mx-auto font-extrabold text-secondary tracking-tight text-4xl">
           Station Finance is the 1inch of decentralized derivatives platforms.
         </p>
-        <p className="mt-8  font-open-sans text-lg max-w-prose mx-auto text-gray-700">
+        <p className="mt-8  font-open-sans text-base max-w-prose mx-auto text-gray-700">
           We ensure best pricing for decentralized derivatives from a variety of DeFi options
           platforms.
         </p>
@@ -34,14 +34,14 @@ export default function Platforms() {
                     alt={platform.name}
                     src={platform.image}
                   />
-                  <p className="font-gilroy justify-self-end text-secondary font-extrabold text-2xl">
+                  <p className="font-gilroy justify-self-end text-secondary font-extrabold text-xl">
                     {platform.name}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-20 font-open-sans text-lg max-w-prose mx-auto text-gray-700">
+          <p className="mt-20 font-open-sans text-base max-w-prose mx-auto text-gray-700">
             With further integrations in the pipeline.
           </p>
         </div>
