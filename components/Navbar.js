@@ -195,7 +195,7 @@ export default function Navbar() {
         className="focus-visible:outline-none focus:outline-none"
         title="Go to top">
         <a href="#" className="" id="return-to-top">
-          <i className="  icon-chevron-up"></i>
+          <i className="icon-chevron-up"></i>
         </a>
       </button>
       <style jsx>{`
