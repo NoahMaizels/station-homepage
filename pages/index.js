@@ -1,8 +1,8 @@
 /* eslint no-undef: 0*/
-import { useMediaQuery } from '@react-hook/media-query'
+// import { useMediaQuery } from '@react-hook/media-query'
 import logoOnly from 'public/logoOnly.png'
-import React, { useState, useEffect, useRef } from 'react'
-import NET from 'node_modules/vanta/dist/vanta.net.min.js'
+// import React, { useState, useEffect, useRef } from 'react'
+// import NET from 'node_modules/vanta/dist/vanta.net.min.js'
 
 // Sub-components
 import Head from 'next/head'
@@ -21,33 +21,33 @@ import Team from 'components/Team'
 import Footer from 'components/Footer'
 
 export default function Index() {
-  const [vantaEffect, setVantaEffect] = useState(0)
-  const myRef = useRef(null)
-  const matches = useMediaQuery('(min-device-width: 800px)')
+  // const [vantaEffect, setVantaEffect] = useState(0)
+  // const myRef = useRef(null)
+  // const matches = useMediaQuery('(min-device-width: 800px)')
 
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        NET({
-          el: myRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          showDots: false,
-          color: '#0af584',
-          backgroundColor: '#474782',
-          points: 12,
-          maxDistance: 24,
-          spacing: matches ? 18 : 30,
-          scale: 1,
-          scaleMobile: 1
-        })
-      )
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy()
-    }
-  }, [vantaEffect])
+  // useEffect(() => {
+  //   if (!vantaEffect) {
+  //     setVantaEffect(
+  //       NET({
+  //         el: myRef.current,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         gyroControls: false,
+  //         showDots: false,
+  //         color: '#0af584',
+  //         backgroundColor: '#474782',
+  //         points: 12,
+  //         maxDistance: 24,
+  //         spacing: matches ? 18 : 30,
+  //         scale: 1,
+  //         scaleMobile: 1
+  //       })
+  //     )
+  //   }
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destroy()
+  //   }
+  // }, [vantaEffect])
 
   return (
     <div className="bg-secondary">
