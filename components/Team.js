@@ -59,7 +59,7 @@ const people = [
   {
     name: 'Jim Austin Joseph, Esq.',
     role: 'Advisor',
-    bio: 'Licensed attorney and certified software developer involved in crypto development since 2014 and in offering legal assistance for ICOs since 2017.  His work has been featured in Techcrunch, CryptoCoinNews and the Houston Chronicle.',
+    bio: 'Licensed attorney and certified software developer. Crypto developer since 2014. ICO legal advisor since 2017. Work featured in Techcrunch, CryptoCoinNews, & the Houston Chronicle.',
     imageUrl: 'Jim.png',
     twitterUrl: '#',
     linkedinUrl: '#'
@@ -78,9 +78,7 @@ export default function Example() {
           {people.map((person) => (
             <li
               className={`${
-                person.name === 'Nicholas Krapels'
-                  ? 'lg:col-start-3 lg:col-end-5 sm:col-start-2 sm:col-end-4'
-                  : ''
+                person.name === 'Nicholas Krapels' ? 'lg:col-start-2 lg:col-end-4' : ''
               } px-5 col-span-2 self-center justify-self-center w-72 sm:w-80 mx-auto`}
               key={person.name}>
               <div className="lg:py-10 lg:px-6 sm:py-8 py-5 px-8 team-height pb-20 team-gradient text-center min-h-96 rounded-lg xl:text-left">
