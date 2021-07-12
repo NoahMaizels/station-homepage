@@ -1,10 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
+
 const people = [
   {
     name: 'James Rozelle',
     role: 'CEO',
     bio: 'Over a decade of experience in software architecture design and six years of blockchain development. James is a natural leader who spearheads the Station initiative.',
-    imageUrl: 'james.png',
+    imageUrl: 'james.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -12,7 +13,7 @@ const people = [
     name: 'Chase Jacobsen',
     role: 'CIO',
     bio: "With a decade of Enterprise IT management experience across multiple sectors, Chase brings strategic offerings to empower Station's technology.",
-    imageUrl: 'chase.jpg',
+    imageUrl: 'chase.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -20,7 +21,7 @@ const people = [
     name: 'Camie Garibaldi',
     role: 'Brand Manager',
     bio: 'Camie brings five years of graphic design and two years of media marketing and streaming experience. She excels in audience engagement and breathing life into ideas.',
-    imageUrl: 'camie.png',
+    imageUrl: 'camie.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -28,7 +29,7 @@ const people = [
     name: 'Alexander Rojas',
     role: 'Lead Developer',
     bio: 'Five years experience in systems languages specializing in automation and AI development in game theory. Four years experience developing Solidity smart contracts.',
-    imageUrl: 'alex.png',
+    imageUrl: 'alex.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -36,7 +37,7 @@ const people = [
     name: 'Noah Maizels',
     role: 'Product Advisor',
     bio: 'Marketing and PR professional with years of industry experience specializing in crypto and technical marketing. Ex-Wanchain, currently consulting at Fomocraft. Skilled front-end developer.',
-    imageUrl: 'noah.png',
+    imageUrl: 'noah.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -44,7 +45,7 @@ const people = [
     name: 'Joe Wong',
     role: 'Marketing Advisor',
     bio: 'Principal at Fomocraft. 20+ years of integrated marketing experience at multiple award-winning global agencies. Launch CMO for MANTRA DAO and Polkastarter. Advisor for MANTRA DAO, Royale, Launchpool and Finxflo.',
-    imageUrl: 'joe.png',
+    imageUrl: 'joe.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
@@ -52,15 +53,15 @@ const people = [
     name: 'Nicholas Krapels',
     role: 'Strategy Advisor',
     bio: 'Principal of Fomocraft Ventures. Advisor to MANTRA DAO, Royale, Launchpool and Finxflo. Ex-Wanchain. Writer, educator, startup strategy and token economy expert.',
-    imageUrl: 'nick.png',
+    imageUrl: 'nick.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   },
   {
     name: 'Jim Austin Joseph, Esq.',
     role: 'Advisor',
-    bio: 'Licensed attorney and certified software developer. Crypto developer since 2014. ICO legal advisor since 2017. Work featured in Techcrunch, CryptoCoinNews, & the Houston Chronicle.',
-    imageUrl: 'Jim.png',
+    bio: 'Licensed attorney. Crypto developer since 2014. Assisted ICO and STO token launches since 2017. Work featured in Techcrunch and CryptoCoinNews.',
+    imageUrl: 'Jim.webp',
     twitterUrl: '#',
     linkedinUrl: '#'
   }

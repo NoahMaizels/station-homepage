@@ -64,22 +64,30 @@ body {
   font-style: 'Semi Bold';
 }
 
-.twitter-tweet.twitter-tweet-rendered {
-  margin: 0 auto !important;
-  display: block;
-}
-
-.canvas-particles-js {
-  background-color: #474782;
-  z-index: -100;
-}
-article.blog-post * {
-  --tw-text-opacity: 1;
-  color: rgba(229, 231, 235, var(--tw-text-opacity));
-}
 h2 {
   color: inherit;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 
+
 .css-1dbjc4n {
   margin: auto;
 }
@@ -104,22 +112,21 @@ canvas {
   opacity: 1;
   -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
   transition: opacity 0.8s ease, transform 1.4s ease;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+} 
+
+
+.twitter-tweet.twitter-tweet-rendered {
+  margin: 0 auto !important;
+  display: block;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.canvas-particles-js {
+  background-color: #474782;
+  z-index: -100;
+}
+article.blog-post * {
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));
 }
 
-* {
-  box-sizing: border-box;
-}
+*/

@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 const platforms = [
-  { name: 'Hegic', image: 'platform-hegic.png' },
-  { name: 'Opyn', image: 'platform-opyn.png' },
-  { name: 'Auctus', image: 'platform-auctus.png' },
-  { name: 'Hedget', image: 'platform-hedget.png' },
-  { name: 'Opium', image: 'platform-opium.png' },
-  { name: 'Premia', image: 'platform-premia.png' }
+  { name: 'Hegic', image: '/platform-hegic.webp' },
+  { name: 'Opyn', image: '/platform-opyn.webp' },
+  { name: 'Auctus', image: '/platform-auctus.webp' },
+  { name: 'Hedget', image: '/platform-hedget.webp' },
+  { name: 'Opium', image: '/platform-opium.webp' },
+  { name: 'Premia', image: '/platform-premia.webp' }
 ]
 
 export default function Platforms() {
@@ -22,10 +24,13 @@ export default function Platforms() {
           <div className="mx-auto sm:max-w-xl lg:max-w-4xl grid grid-cols-1  lg:gap-y-8 lg:gap-x-0 md:gap-y-6 gap-y-12  md:gap-x-0 sm:gap-x-0 sm:grid-cols-2 lg:grid-cols-3">
             {platforms.map((platform) => (
               <div key={platform.name} className="">
-                <div className="mx-auto flex flex-col justify-between py-10 bg-gray-50 rounded-lg w-64 h-56">
-                  <img
+                <div className="mx-auto justify-between py-10 bg-gray-50 rounded-lg w-64 h-56">
+                  <Image
                     className="mx-auto pb-6"
                     width={platform.name === 'Auctus' || platform.name === 'Hegic' ? '115' : '90'}
+                    height={
+                      platform.name === 'Auctus' ? '78' : platform.name === 'Hegic' ? '115' : '80'
+                    }
                     alt={platform.name}
                     src={platform.image}
                   />

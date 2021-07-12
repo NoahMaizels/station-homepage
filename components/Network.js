@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Image from 'next/image'
-import substation from 'public/substation.jpg'
-import balancer from 'public/balancer.jpg'
+import substation from 'public/substation.webp'
+import balancer from 'public/balancer.webp'
 
 export default function Network() {
   return (
@@ -23,13 +23,13 @@ export default function Network() {
           </div>
 
           <div className="mt-12 sm:mt-16 lg:mt-0 px-6 lg:ml-6 col-span-2">
-            <Image src={substation} />
+            <Image width={568} height={547} src={substation} />
           </div>
         </div>
 
         <div className="mx-auto lg:px-8 lg:max-w-5xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense flex flex-col-reverse">
           <div className="mt-12 lg:mr-10 px-6 sm:mt-16 lg:mt-0  col-span-2">
-            <Image src={balancer} />
+            <Image width={552} height={379} src={balancer} />
           </div>
 
           <div className=" ">

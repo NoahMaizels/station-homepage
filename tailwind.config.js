@@ -22,9 +22,9 @@ module.exports = {
         lightPurple: '#B0A1F4'
       }),
       backgroundImage: (theme) => ({
-        train: "url('public/bg-train.jpg')",
-        laptop: "url('public/bg-laptop.jpg')",
-        pyramid: "url('public/bg-pyramid.jpg')"
+        train: "url('public/bg-train.webp')",
+        laptop: "url('public/bg-laptop.webp')",
+        pyramid: "url('public/bg-pyramid.webp')"
       }),
       backgroundColor: (theme) => ({
         ...theme('colors'),

@@ -60,7 +60,7 @@ export default function Train() {
         </div>
       </div>
       <div className="max-w-4xl px-10 pb-4 mx-auto">
-        <img className="w-48" alt="station logo" src="logo09.png"></img>
+        <img className="w-48" alt="station logo" src="logo09.webp"></img>
       </div>
     </div>
   )

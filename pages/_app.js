@@ -14,16 +14,13 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-          rel="stylesheet"></link>
         <meta
           name="description"
           content="Home of Station Finance - The decentralized derivatives aggregator."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://station-homepage.vercel.app/" />
-        <meta name="og:image" content="https://i.imgur.com/ci40UZl.jpeg" />
+        <meta name="og:image" content="https://i.imgur.com/ci40UZl.webp" />
         <meta
           property="og:description"
           content="Home of Station Finance - The decentralized derivatives aggregator."
@@ -32,7 +29,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="station-homepage.vercel.app" />
         <meta name="twitter:creator" content="@StationFinance" />
-        <meta name="twitter:image" content="https://i.imgur.com/ci40UZl.jpeg" />
+        <meta name="twitter:image" content="https://i.imgur.com/ci40UZl.webp" />
         <meta
           name="twitter:description"
           content="Home of Station Finance - The decentralized derivatives aggregator."

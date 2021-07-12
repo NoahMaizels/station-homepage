@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import challengeImg01 from 'public/challenge-image-01.png'
-import challengeImg02 from 'public/challenge-image-02.png'
-import challengeImg03 from 'public/challenge-image-03.png'
-import challengeImg04 from 'public/challenge-image-04.png'
+import challengeImg01 from 'public/challenge-image-01.webp'
+import challengeImg02 from 'public/challenge-image-02.webp'
+import challengeImg03 from 'public/challenge-image-03.webp'
+import challengeImg04 from 'public/challenge-image-04.webp'
 
 const challenges = [
   {
@@ -56,7 +56,7 @@ export default function Challenges() {
               </dt>
               {/* flex lg:text-left mx-auto text-center  pb-8 lg:pt-14 pt-0 h-20 w-20 lg:mb-6 mb-0  lg:mt-5 mt-0 rounded-md */}
               <div className="inline-block lg:mr-auto lg:ml-0  mx-auto h-20 w-20  lg:mb-0 mb-3  rounded-md">
-                <Image width={80} src={challenge.image} />
+                <Image width={80} height={80} src={challenge.image} />
               </div>
               <dd className="lg:mt-2 lg:text-left text-med font-open-sans text-gray-50">
                 {challenge.description}

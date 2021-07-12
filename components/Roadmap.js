@@ -1,5 +1,4 @@
 const quarters = ['Q3', 'Q4', 'Q1']
-
 const Q1 = () => (
   <>
     <li className="text-left text-gray-200 pb-2 text-sm font-open-sans">
@@ -120,7 +119,7 @@ export default function Roadmap() {
                   alt="line"
                   className="absolute -translate-y-4 translate-x-0 transform"
                   width="40"
-                  src="triangle.png"
+                  src="triangle.webp"
                 />
                 <h2 className="absolute transform -translate-y-24 translate-x-0 text-primary font-gilroy text-5xl font-extrabold">
                   {quarter}
@@ -139,7 +138,7 @@ export default function Roadmap() {
                   alt="line"
                   className={`-translate-y-5 md:hidden -translate-x-10 -rotate-90 transform`}
                   width="40"
-                  src="triangle.png"
+                  src="triangle.webp"
                 />
                 <div className="pb-4 flex h-full flex-col justify-start bg-dark rounded-lg pt-6 ">
                   <p

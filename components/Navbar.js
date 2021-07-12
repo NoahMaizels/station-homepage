@@ -69,7 +69,7 @@ export default function Navbar() {
               <div className="z-50 flex justify-between items-center px-4 py-6 sm:px-6   md:space-x-10">
                 <div className="flex justify-start ">
                   <a href="/">
-                    <img className="h-10 w-auto" src="logo07.png" alt="" />
+                    <img className="h-10 w-auto" src="logo07.webp" alt="" />
                   </a>
                 </div>
                 <div className="-mr-2 -my-2 lg:hidden">
@@ -139,7 +139,7 @@ export default function Navbar() {
                     <div className="flex items-center justify-between">
                       <div>
                         <a href="/">
-                          <img className="h-10 mb-4 font-bold w-auto" src="logo07.png" alt="" />
+                          <img className="h-10 mb-4 font-bold w-auto" src="logo07.webp" alt="" />
                         </a>
                       </div>
                       <div className="-mr-2">

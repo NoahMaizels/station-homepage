@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import solutionImg01 from 'public/solution-image-01.png'
-import solutionImg02 from 'public/solution-image-02.png'
-import solutionImg03 from 'public/solution-image-03.png'
-import solutionImg04 from 'public/solution-image-04.png'
+import solutionImg01 from 'public/solution-image-01.webp'
+import solutionImg02 from 'public/solution-image-02.webp'
+import solutionImg03 from 'public/solution-image-03.webp'
+import solutionImg04 from 'public/solution-image-04.webp'
 
 const solutions = [
   {

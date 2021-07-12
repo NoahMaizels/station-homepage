@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import thor01 from 'public/thor01.jpg'
-import thor02 from 'public/thor02.jpg'
+import thor01 from 'public/thor01.webp'
+import thor02 from 'public/thor02.webp'
 
 const items = [
   {
@@ -32,7 +32,7 @@ export default function Thorchain() {
                     <div>
                       <div className="bg-gray-50 items-center justify-center p-3 rounded-lg">
                         <div className="mx-auto w-36 pt-10 pb-5">
-                          <Image src={item.image} />
+                          <Image width={144} height={144} src={item.image} />
                         </div>
                         <p className="px-2 lg:px-10 sm:pb-14 text-sm text-gray-700 font-open-sans pb-6">
                           {item.text}
