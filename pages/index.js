@@ -57,7 +57,8 @@ export default function Index() {
       {/* This example requires Tailwind CSS v2.0+ */}
 
       <Navbar></Navbar>
-      <div ref={myRef} id="bg-element">
+      {/* <div ref={myRef} id="bg-element"> */}
+      <div id="bg-element">
         <div className="blur">
           <div className="px-5 pb-32">
             <div className="sm:w-40 sm:pt-40  w-36 pt-44 mx-auto">
