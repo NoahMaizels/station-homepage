@@ -1,6 +1,5 @@
 /* eslint no-undef: 0*/
 import { useMediaQuery } from '@react-hook/media-query'
-import logoOnly from 'public/logoOnly.webp'
 import React, { useState, useEffect, useRef } from 'react'
 import NET from 'node_modules/vanta/dist/vanta.net.min.js'
 
@@ -61,7 +60,7 @@ export default function Index() {
         <div className="blur">
           <div className="px-5 pb-32">
             <div className="sm:w-40 sm:pt-40  w-36 pt-44 mx-auto">
-              <Image width={160} height={140} src={logoOnly} />
+              <Image width={160} height={140} src="/logoOnly.webp" />
             </div>
             <h1 className="tracking-tight sm:mt-16 mt-10 px-10 sm:px-0 text-center sm:text-6xl text-5xl font-gilroy font-bold text-gray-200">
               Where Derivatives Live
