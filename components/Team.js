@@ -55,6 +55,14 @@ const people = [
     imageUrl: 'nick.png',
     twitterUrl: '#',
     linkedinUrl: '#'
+  },
+  {
+    name: 'Jim Austin Joseph, Esq.',
+    role: 'Advisor',
+    bio: 'Licensed attorney and certified software developer involved in crypto development since 2014 and in offering legal assistance for ICOs since 2017.  His work has been featured in Techcrunch, CryptoCoinNews and the Houston Chronicle.',
+    imageUrl: 'Jim.png',
+    twitterUrl: '#',
+    linkedinUrl: '#'
   }
 ]
 
