@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import challengeImg01 from 'public/challenge-image-01.webp'
-import challengeImg02 from 'public/challenge-image-02.webp'
-import challengeImg03 from 'public/challenge-image-03.webp'
-import challengeImg04 from 'public/challenge-image-04.webp'
+import challengeImg01 from '/public/challenge-image-01.webp'
+import challengeImg02 from '/public/challenge-image-02.webp'
+import challengeImg03 from '/public/challenge-image-03.webp'
+import challengeImg04 from '/public/challenge-image-04.webp'
 
 const challenges = [
   {
