@@ -56,7 +56,7 @@ export default function Solutions() {
               </dt>
               {/* flex lg:text-left mx-auto text-center  pb-8 lg:pt-14 pt-0 h-20 w-20 lg:mb-6 mb-0  lg:mt-5 mt-0 rounded-md */}
               <div className="inline-block lg:mr-auto lg:ml-0  mx-auto h-20 w-20  lg:mb-0 mb-3  rounded-md">
-                <Image width={80} src={solution.image} />
+                <Image priority width={80} src={solution.image} />
               </div>
               <dd className="lg:mt-2 lg:text-left text-sm font-open-sans text-gray-50">
                 {solution.description}

@@ -27,6 +27,7 @@ export default function Platforms() {
                 <div className="mx-auto justify-between py-10 bg-gray-50 rounded-lg w-64 h-56">
                   <Image
                     className="mx-auto pb-6"
+                    priority
                     width={platform.name === 'Auctus' || platform.name === 'Hegic' ? '115' : '90'}
                     height={
                       platform.name === 'Auctus' ? '78' : platform.name === 'Hegic' ? '115' : '80'
