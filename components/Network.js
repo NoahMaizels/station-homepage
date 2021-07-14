@@ -23,13 +23,13 @@ export default function Network() {
           </div>
 
           <div className="mt-12 sm:mt-16 lg:mt-0 px-6 lg:ml-6 col-span-2">
-            <Image width={568} height={547} src={substation} />
+            <Image priority width={568} height={547} src={substation} />
           </div>
         </div>
 
         <div className="mx-auto lg:px-8 lg:max-w-4xl max-w-xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense flex flex-col-reverse">
           <div className="mt-12 lg:mr-10 px-6 sm:mt-16 lg:mt-0  col-span-2">
-            <Image width={552} height={379} src={balancer} />
+            <Image priority width={552} height={379} src={balancer} />
           </div>
 
           <div className=" ">
