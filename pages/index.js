@@ -26,7 +26,7 @@ export default function Index() {
     particlesJS('particles-js', {
       particles: {
         number: {
-          value: 86,
+          value: 90,
           density: {
             enable: true,
             value_area: 640.6919473030873
@@ -57,7 +57,7 @@ export default function Index() {
         },
         line_linked: {
           enable: true,
-          distance: 200,
+          distance: 220,
           color: '#0af584',
           opacity: 0.6,
           width: 1
@@ -65,9 +65,9 @@ export default function Index() {
         move: {
           enable: true,
           speed: 1,
-          direction: 'none',
+          direction: 'top-right',
           random: true,
-          straight: false,
+          straight: true,
           out_mode: 'out',
           bounce: false,
           attract: {
