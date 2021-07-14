@@ -29,7 +29,7 @@ export default function Index() {
           value: 80,
           density: {
             enable: true,
-            value_area: 640.6919473030873
+            value_area: 800
           }
         },
         color: {
@@ -65,9 +65,9 @@ export default function Index() {
         move: {
           enable: true,
           speed: 1,
-          direction: 'top-right',
+          direction: 'none',
           random: true,
-          straight: true,
+          straight: false,
           out_mode: 'out',
           bounce: false,
           attract: {
