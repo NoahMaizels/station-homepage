@@ -60,7 +60,7 @@ export default function Index() {
           distance: 220,
           color: '#0af584',
           opacity: 0.6,
-          width: 1
+          width: 1.5
         },
         move: {
           enable: true,
