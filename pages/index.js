@@ -33,7 +33,7 @@ export default function Index() {
           }
         },
         color: {
-          value: '#ffffff'
+          value: '#0af584'
         },
         opacity: {
           value: 0.5,
@@ -58,7 +58,7 @@ export default function Index() {
         line_linked: {
           enable: true,
           distance: 200,
-          color: '#ffffff',
+          color: '#0af584',
           opacity: 0.6,
           width: 1
         },
