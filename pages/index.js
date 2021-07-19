@@ -2,6 +2,7 @@
 import { useMediaQuery } from '@react-hook/media-query'
 import React, { useState, useEffect, useRef } from 'react'
 import NET from 'node_modules/vanta/dist/vanta.net.min.js'
+import * as THREE from 'three'
 import Image from 'next/image'
 
 // Sub-components
@@ -29,6 +30,7 @@ export default function Index() {
       setVantaEffect(
         NET({
           el: myRef.current,
+          THREE: THREE,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
