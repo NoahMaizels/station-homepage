@@ -1,8 +1,9 @@
 /* eslint no-undef: 0*/
-// import { useMediaQuery } from '@react-hook/media-query'
-import React, { useEffect } from 'react'
-// import NET from 'node_modules/vanta/dist/vanta.net.min.js'
+import { useMediaQuery } from '@react-hook/media-query'
+import React, { useState, useEffect, useRef } from 'react'
+import NET from 'node_modules/vanta/dist/vanta.net.min.js'
 import Image from 'next/image'
+
 // Sub-components
 import Head from 'next/head'
 import Navbar from 'components/Navbar'
@@ -19,125 +20,46 @@ import Team from 'components/Team'
 import Footer from 'components/Footer'
 
 export default function Index() {
-  // const [vantaEffect, setVantaEffect] = useState(0)
-  // const matches = useMediaQuery('(min-device-width: 800px)')
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const myRef = useRef(null)
+  const matches = useMediaQuery('(min-width: 800px)')
 
   useEffect(() => {
-    particlesJS('particles-js', {
-      particles: {
-        number: {
-          value: 80,
-          density: {
-            enable: true,
-            value_area: 800
-          }
-        },
-        color: {
-          value: '#0af584'
-        },
-        opacity: {
-          value: 0.5,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false
-          }
-        },
-        size: {
-          value: 0,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false
-          }
-        },
-        line_linked: {
-          enable: true,
-          distance: 220,
+    if (!vantaEffect) {
+      setVantaEffect(
+        NET({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          showDots: false,
           color: '#0af584',
-          opacity: 0.6,
-          width: 1.5
-        },
-        move: {
-          enable: true,
-          speed: 1,
-          direction: 'none',
-          random: true,
-          straight: false,
-          out_mode: 'out',
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200
-          }
-        }
-      },
-      interactivity: {
-        detect_on: 'canvas',
-        events: {
-          onhover: {
-            enable: true,
-            mode: 'repulse'
-          },
-          onclick: {
-            enable: false,
-            mode: 'push'
-          },
-          resize: true
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 1
-            }
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3
-          },
-          repulse: {
-            distance: 64.8924002887712,
-            duration: 0.4
-          },
-          push: {
-            particles_nb: 4
-          },
-          remove: {
-            particles_nb: 2
-          }
-        }
-      },
-      retina_detect: true
-    })
-    var update
-    update = function () {
-      requestAnimationFrame(update)
+          backgroundColor: '#474782',
+          points: 20,
+          maxDistance: 24,
+          spacing: matches ? 20 : 26,
+          minWidth: 2000
+        })
+      )
     }
-    requestAnimationFrame(update)
-  }, [])
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
 
   return (
-    <div className="bg-secondary">
+    <div className="bg-secondary overflow-hidden bg-center">
       <Head>
         <title>Station</title>
       </Head>
       {/* This example requires Tailwind CSS v2.0+ */}
+
       <Navbar></Navbar>
-      <div id="particles-js"></div>
-      <div>
-        <div className="blur pb-24">
-          <div className="px-5">
-            <div className="sm:w-40  w-36 pt-36 mx-auto">
-              <Image priority width={130} height={113.75} alt="main logo" src="/mainlogo.webp" />
+      <div ref={myRef} id="bg-element">
+        <div className="blur">
+          <div className="px-5 pb-32">
+            <div className="sm:w-40 sm:pt-40  w-36 pt-44 mx-auto">
+              <Image priority width={160} height={140} alt="main logo" src="/mainlogo.webp" />
             </div>
             <h1 className="tracking-tight sm:mt-16 mt-10 px-10 sm:px-0 text-center sm:text-5xl text-4xl font-gilroy font-bold text-gray-200">
               Where Derivatives Live
@@ -165,6 +87,7 @@ export default function Index() {
       <Roadmap></Roadmap>
       <Team></Team>
       <Footer></Footer>
+
       <style jsx>{`
         #bg-element {
           width: 100%;

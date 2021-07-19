@@ -39,7 +39,6 @@ function MyApp({ Component, pageProps }) {
           href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
           rel="stylesheet"></link>
         <script src="/scripts/three.min.js"></script>
-        <script src="/scripts/particles.min.js"></script>
       </Head>
       <Component {...pageProps} />
     </>

@@ -78,8 +78,10 @@ export default function Example() {
           {people.map((person) => (
             <li
               className={`${
-                person.name === 'Nicholas Krapels' ? 'lg:col-start-2 lg:col-end-4' : ''
-              } px-4 col-span-2 self-center justify-self-center mx-auto`}
+                person.name === 'Nicholas Krapels'
+                  ? 'lg:col-start-2 lg:col-end-4  px-4 col-span-2 self-center justify-self-center mx-auto'
+                  : ' px-4 col-span-2 self-center justify-self-center mx-auto'
+              }`}
               key={person.name}>
               <div className="lg:px-6 px-8 pt-6 team-height team-gradient text-center rounded-lg xl:text-left">
                 <div className="space-y-2 xl:space-y-4">
