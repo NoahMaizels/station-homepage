@@ -1,6 +1,4 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import { Twitter, Telegram, Telegramann, Medium } from './Socials'
 import { Fragment } from 'react'
@@ -196,19 +194,78 @@ export default function Navbar() {
         id="myBtn"
         className="focus-visible:outline-none focus:outline-none"
         title="Go to top">
-        <a href="#" id="return-to-top">
-          {/* <div className="chevron-wrapper"> */}
-          <FontAwesomeIcon
-            className="fa-scroll-up"
-            // style={{ width: '20px', margin: 'auto' }}
-            icon={faChevronUp}
-            color="white"
-          />
-          {/* </div> */}
-
-          {/* <i className="icon-chevron-up"></i> */}
+        <a href="#" className="" id="return-to-top">
+          <i className="icon-chevron-up"></i>
         </a>
       </button>
+      <style jsx>{`
+        #myBtn {
+          outline-width: 0;
+          outline: none;
+          -webkit-touch-callout: none !important;
+          -webkit-user-select: none !important;
+          -khtml-user-select: none !important;
+          -moz-user-select: none !important;
+          -ms-user-select: none !important;
+          user-select: none !important;
+          display: none; /* Hidden by default */
+          position: fixed; /* Fixed/sticky position */
+          bottom: 20px; /* Place the button at the bottom of the page */
+          right: 30px; /* Place the button 30px from the right */
+          z-index: 99; /* Make sure it does not overlap */
+          background: rgb(0, 0, 0);
+          background: rgba(f0, 0, 0, 0.7);
+          width: 50px;
+          height: 50px;
+          text-decoration: none;
+          -webkit-border-radius: 35px;
+          -moz-border-radius: 35px;
+          border-radius: 35px;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+        }
+        #myBtn:focus {
+          outline: none;
+        }
+        #return-to-top:focus {
+          outline: none;
+        }
+        #return-to-top i:focus {
+          outline: none;
+        }
+        #myBtn:focus-visible {
+          outline: none;
+        }
+        #return-to-top:focus-visible {
+          outline: none;
+        }
+        #return-to-top i:focus-visible {
+          outline: none;
+        }
+        #myBtn:hover {
+          background-color: #555; /* Add a dark-grey background on hover */
+        }
+        #return-to-top i {
+          color: #fff;
+          margin: 0;
+          position: relative;
+          left: 0px;
+          top: 0px;
+          font-size: 19px;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+        }
+        #myBtn:hover #return-to-top i {
+          color: #fff;
+          top: 5px;
+        }
+      `}</style>
     </div>
   )
 }

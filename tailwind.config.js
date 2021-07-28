@@ -1,6 +1,6 @@
 /* eslint no-unused-vars: 0*/
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js'],
+  purge: [],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
