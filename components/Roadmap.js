@@ -147,8 +147,10 @@ export default function Roadmap() {
                   </p>
                   <p
                     className={`${
-                      quarter !== 'Q1' ? 'hidden' : ''
-                    } absolute transform  md:-translate-x-40 -translate-y-20 translate-x-14 font-extralight md:text-4xl text-3xl  text-primary font-gilroy md:hidden`}>
+                      quarter !== 'Q1'
+                        ? 'hidden absolute transform  md:-translate-x-40 -translate-y-20 translate-x-14 font-extralight md:text-4xl text-3xl  text-primary font-gilroy md:hidden'
+                        : 'absolute transform  md:-translate-x-40 -translate-y-20 translate-x-14 font-extralight md:text-4xl text-3xl  text-primary font-gilroy md:hidden'
+                    }`}>
                     2022
                   </p>
                   <ul className="list-disc pl-10 pr-8 pb-0 pt-3 h-full">

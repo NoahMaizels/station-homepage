@@ -35,11 +35,6 @@ function MyApp({ Component, pageProps }) {
           content="Home of Station Finance - The decentralized derivatives aggregator."
         />
         <meta name="twitter:title" content="Station Finance Homepage" />
-        <link
-          href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-          rel="stylesheet"></link>
-        <script src="/scripts/three.min.js"></script>
-        <script src="/scripts/particles.min.js"></script>
       </Head>
       <Component {...pageProps} />
     </>
